@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>News - AeroCMS</title>
+<meta name="description" content="The AeroCMS blog &mdash; SaaS sprawl, aging tech, Windows EOL, PCI DSS 4.0, and the operational decisions in between." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" href="assets/logos/AeroCMS-Logo-70.png" />
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="container utility-bar__inner">
+    <span class="utility-bar__hours">Mon-Fri, 8am-5pm MST</span>
+    <span class="utility-bar__divider"></span>
+    <a href="tel:5416052186" class="utility-bar__phone">(541) 605-2186</a>
+    <span class="utility-bar__divider"></span>
+    <span class="utility-bar__offices">Nampa &middot; Bellevue &middot; La Grande &middot; Cleveland &middot; Birmingham</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="index.html" class="site-header__brand"><img src="assets/logos/AeroCMS-Logo-70.png" alt="AeroCMS" width="160" /></a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="plans.html">Plans</a>
+      <a href="resources.html">Resources</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn btn--primary site-header__cta">Book an Appointment</a>
+    <button class="site-header__menu" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hole__inner page-hero__inner">
+      <nav class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb__sep">&rsaquo;</span>News</nav>
+      <span class="eyebrow">From the desk</span>
+      <h1 class="page-hero__title">News, takes, and what we're seeing in the field.</h1>
+      <p class="page-hero__lead">
+        Notes from inside the shop &mdash; what's changing in the threat landscape, what we're
+        recommending right now, and what we're warning clients off of. Monthly cadence. No filler.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Featured + Grid -->
+<section class="content-section">
+  <div class="container">
+    <!-- Featured -->
+    <article class="news-featured">
+      <div class="news-featured__media">
+        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1400&q=80&auto=format&fit=crop" alt="Featured article" />
+      </div>
+      <div class="news-featured__body">
+        <span class="news-featured__tag">Featured</span>
+        <h2><a href="#" style="color: inherit; text-decoration: none;">Why Are SaaS Sprawl Risks Costing Your Business More?</a></h2>
+        <p>Most businesses don't realize how many SaaS apps their team has signed into until the invoices start surprising them. Sprawl isn't just a cost problem &mdash; it's a security one. Here's how to audit it without nuking productivity.</p>
+        <a href="#" class="btn btn--primary">Read the post &rarr;</a>
+      </div>
+    </article>
+
+    <!-- Grid -->
+    <div class="news-grid">
+      <a href="#" class="news-card">
+        <div class="news-card__media">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80&auto=format&fit=crop" alt="" />
+        </div>
+        <div class="news-card__body">
+          <span class="news-card__tag">Business Security</span>
+          <h3>How Does SaaS Vendor Risk Management Reduce SaaS Sprawl?</h3>
+          <p>The discipline most growing teams skip &mdash; until a vendor breach forces the conversation. A vendor risk framework you can actually run.</p>
+          <div class="news-card__meta">
+            <span>5 min read</span>
+            <span>May 2026</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="news-card">
+        <div class="news-card__media">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80&auto=format&fit=crop" alt="" />
+        </div>
+        <div class="news-card__body">
+          <span class="news-card__tag">Hardware</span>
+          <h3>What Are the Real Risks of Aging Technology?</h3>
+          <p>Hardware doesn't just get slower &mdash; it gets less secure. The actual operational cost of stretching one more year out of that 2019 fleet refresh.</p>
+          <div class="news-card__meta">
+            <span>6 min read</span>
+            <span>Apr 2026</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="news-card">
+        <div class="news-card__media">
+          <img src="https://images.unsplash.com/photo-1633419461186-7d40a38105ec?w=900&q=80&auto=format&fit=crop" alt="" />
+        </div>
+        <div class="news-card__body">
+          <span class="news-card__tag">Cybersecurity</span>
+          <h3>Is Windows 10 End of Life a Security Risk for Your Business?</h3>
+          <p>Yes &mdash; and the path to upgrade has more failure modes than most teams realize. The migration checklist Microsoft won't hand you.</p>
+          <div class="news-card__meta">
+            <span>7 min read</span>
+            <span>Mar 2026</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="news-card">
+        <div class="news-card__media">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=900&q=80&auto=format&fit=crop" alt="" />
+        </div>
+        <div class="news-card__body">
+          <span class="news-card__tag">Tech Support</span>
+          <h3>Aging Technology &amp; Business Continuity: Preparing for Change Without Chaos</h3>
+          <p>How to plan a multi-year hardware refresh that doesn't blow up your operations &mdash; and the OpEx-vs-CapEx framing that usually wins the budget conversation.</p>
+          <div class="news-card__meta">
+            <span>8 min read</span>
+            <span>Mar 2026</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="news-card">
+        <div class="news-card__media">
+          <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=900&q=80&auto=format&fit=crop" alt="" />
+        </div>
+        <div class="news-card__body">
+          <span class="news-card__tag">Cybersecurity</span>
+          <h3>Following PCI DSS 4.0 &mdash; A Simplified Survival Guide</h3>
+          <p>The new requirements, the deadlines, and the controls most businesses don't have yet. With a checklist you can use this quarter.</p>
+          <div class="news-card__meta">
+            <span>9 min read</span>
+            <span>Feb 2026</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="news-card">
+        <div class="news-card__media">
+          <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=900&q=80&auto=format&fit=crop" alt="" />
+        </div>
+        <div class="news-card__body">
+          <span class="news-card__tag">Cybersecurity</span>
+          <h3>The Cloud Migration Mistakes We See Most Often</h3>
+          <p>Three patterns we keep watching teams repeat &mdash; right-sizing failures, identity sprawl, and the dreaded "lift-and-shift then forget it" anti-pattern.</p>
+          <div class="news-card__meta">
+            <span>6 min read</span>
+            <span>Jan 2026</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Pagination -->
+    <div style="text-align: center; margin-top: 64px;">
+      <a href="#" class="btn btn--ghost">&laquo; Older Entries</a>
+      <span style="display: inline-block; margin: 0 16px; color: var(--ink-500); font-size: 14px;">Page 1 of 12</span>
+      <a href="#" class="btn btn--ghost">Newer Entries &raquo;</a>
+    </div>
+  </div>
+</section>
+
+<!-- Categories / Subscribe band -->
+<section class="content-section content-section--soft">
+  <div class="container">
+    <div class="split">
+      <div class="split__content">
+        <span class="eyebrow">Stay current</span>
+        <h2>Get the new posts in your inbox.</h2>
+        <p>
+          We publish a few times a month. The mailing list is the same notes our clients get
+          &mdash; field observations, security alerts, and the rare "this is going to bite half
+          our industry" warnings.
+        </p>
+        <form onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed!';" style="margin-top: 24px; display: flex; gap: 8px; max-width: 480px;">
+          <input type="email" required placeholder="you@business.com" style="flex: 1; padding: 14px 16px; border: 1px solid var(--border); border-radius: var(--radius-sm); font-family: inherit; font-size: 15px;" />
+          <button type="submit" class="btn btn--primary">Subscribe</button>
+        </form>
+      </div>
+      <div>
+        <h3 style="font-size: 18px; margin-bottom: 16px;">Browse by category</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <a href="#" class="resource-tab">Business Security (24)</a>
+          <a href="#" class="resource-tab">Cybersecurity (38)</a>
+          <a href="#" class="resource-tab">Hardware (15)</a>
+          <a href="#" class="resource-tab">Tech Support (21)</a>
+          <a href="#" class="resource-tab">Cloud (12)</a>
+          <a href="#" class="resource-tab">Compliance (9)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <img src="assets/logos/AeroCMS-Logo-70.png" alt="AeroCMS" width="150" />
+        <p>Aero Computer Management Solutions LLC. With Aero, IT's easy.</p>
+      </div>
+      <div class="site-footer__col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services/it-business.html">IT Business Solutions</a></li>
+          <li><a href="services/security.html">Security Solutions</a></li>
+          <li><a href="services/cloud.html">Cloud Services</a></li>
+          <li><a href="services/hardware.html">Hardware as a Service</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html#team">Team</a></li>
+          <li><a href="plans.html">Plans</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="news.html">News</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:5416052186">(541) 605-2186</a></li>
+          <li>P.O. Box 1433<br />Nampa, ID 83653</li>
+          <li>Mon-Fri, 8am-5pm MST</li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h5>Offices</h5>
+        <ul>
+          <li>Nampa, ID</li>
+          <li>Bellevue, WA</li>
+          <li>La Grande, OR</li>
+          <li>Cleveland, OH</li>
+          <li>Birmingham, AL</li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__base">
+      <span>&copy; 2026 Aero Computer Management Solutions LLC. All rights reserved.</span>
+      <span class="site-footer__mockup-tag">Redesign mockup &middot; not production</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuToggle');
+  const nav = document.querySelector('.site-nav');
+  menuBtn.addEventListener('click', () => {
+    const open = nav.classList.toggle('site-nav--open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('site-nav--open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+  }));
+</script>
+
+</body>
+</html>

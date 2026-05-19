@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Plans - AeroCMS</title>
+<meta name="description" content="Good, Better, Best, Enterprise. Four tiers built around how much IT you want to own &mdash; plus the Kaseya User Bundle across all of them." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" href="assets/logos/AeroCMS-Logo-70.png" />
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="container utility-bar__inner">
+    <span class="utility-bar__hours">Mon-Fri, 8am-5pm MST</span>
+    <span class="utility-bar__divider"></span>
+    <a href="tel:5416052186" class="utility-bar__phone">(541) 605-2186</a>
+    <span class="utility-bar__divider"></span>
+    <span class="utility-bar__offices">Nampa &middot; Bellevue &middot; La Grande &middot; Cleveland &middot; Birmingham</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="index.html" class="site-header__brand"><img src="assets/logos/AeroCMS-Logo-70.png" alt="AeroCMS" width="160" /></a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="plans.html">Plans</a>
+      <a href="resources.html">Resources</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn btn--primary site-header__cta">Book an Appointment</a>
+    <button class="site-header__menu" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__inner">
+      <nav class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb__sep">&rsaquo;</span>Plans</nav>
+      <span class="eyebrow">Pick your altitude</span>
+      <h1 class="page-hero__title">Plans built around <span style="background: linear-gradient(135deg, var(--teal-500), var(--teal-700)); -webkit-background-clip: text; background-clip: text; color: transparent;">how much IT you want to own.</span></h1>
+      <p class="page-hero__lead">
+        Four tiers, plus the Kaseya User Bundle as a per-seat add-on across any of them. Convention
+        over configuration on the lower tiers, full customization at Enterprise. No long-term lock-in
+        unless you want it.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Plans grid (reused from home) -->
+<section class="plans" style="padding: 96px 0 80px;">
+  <div class="container">
+    <div class="plans__grid">
+      <article class="plan plan--good">
+        <header>
+          <span class="plan__tier">Good</span>
+          <h3>Essentials</h3>
+        </header>
+        <p class="plan__desc">The IT floor every business should have. Convention over configuration &mdash; you get the stack, you get support when you need it.</p>
+        <ul class="plan__features">
+          <li>Kaseya tool stack</li>
+          <li>Backups &amp; license management</li>
+          <li>Endpoint management &amp; security</li>
+          <li>Office / M365 licenses</li>
+          <li>Time-and-materials support</li>
+        </ul>
+        <a href="contact.html" class="btn btn--ghost btn--block">Get a quote</a>
+      </article>
+
+      <article class="plan plan--better">
+        <header>
+          <span class="plan__tier">Better</span>
+          <h3>Plus</h3>
+        </header>
+        <p class="plan__desc">Essentials plus all-you-can-eat support. No surprise invoices when something breaks &mdash; tickets, helpdesk, Benchmark coverage included.</p>
+        <ul class="plan__features">
+          <li>Everything in Essentials</li>
+          <li>All-you-can-eat helpdesk</li>
+          <li>Ticketing access</li>
+          <li>Benchmark 365 escalation</li>
+          <li>SLAs on response</li>
+        </ul>
+        <a href="contact.html" class="btn btn--ghost btn--block">Get a quote</a>
+      </article>
+
+      <article class="plan plan--best plan--featured">
+        <span class="plan__badge">Most popular</span>
+        <header>
+          <span class="plan__tier">Best</span>
+          <h3>Premium</h3>
+        </header>
+        <p class="plan__desc">Plus, plus HaaS. The hardware is on us &mdash; we lease and lifecycle the gear so you stay current without the capital hit.</p>
+        <ul class="plan__features">
+          <li>Everything in Plus</li>
+          <li>Hardware as a Service</li>
+          <li>3-year hardware guarantee</li>
+          <li>Refresh &amp; recycle handled</li>
+          <li>OpEx-friendly monthly</li>
+        </ul>
+        <a href="contact.html" class="btn btn--primary btn--block">Get a quote</a>
+      </article>
+
+      <article class="plan plan--enterprise">
+        <header>
+          <span class="plan__tier">Enterprise</span>
+          <h3>Select / Complete</h3>
+        </header>
+        <p class="plan__desc">Customization over convention. Retainer-based, hybrid or full-stack &mdash; gap-fill consulting or end-to-end ownership of your IT operations.</p>
+        <ul class="plan__features">
+          <li>Retainer agreements</li>
+          <li>Hybrid &amp; outcome-based support</li>
+          <li>vCISO available</li>
+          <li>Min spend + variance terms</li>
+          <li>Strategic roadmap engagement</li>
+        </ul>
+        <a href="contact.html" class="btn btn--ghost btn--ghost-light btn--block">Talk to sales</a>
+      </article>
+    </div>
+    <p class="plans__addon">
+      <strong>+ Kaseya User Bundle</strong> available per seat on any tier &mdash; phish detection, security monitoring, email filter, dark web monitoring, M365 SaaS backups, security awareness training.
+    </p>
+  </div>
+</section>
+
+<!-- Comparison table -->
+<section class="content-section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Side by side</span>
+      <h2>What's in each tier.</h2>
+      <p>The short version. For exact scope and pricing, talk to us &mdash; engagements are sized to your team.</p>
+    </div>
+    <div class="comparison-wrap">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Good<br /><small style="font-weight: 400; color: var(--ink-500);">Essentials</small></th>
+            <th>Better<br /><small style="font-weight: 400; color: var(--ink-500);">Plus</small></th>
+            <th class="featured-col-head">Best<br /><small style="font-weight: 400; color: rgba(255,255,255,.75);">Premium</small></th>
+            <th>Enterprise<br /><small style="font-weight: 400; color: var(--ink-500);">Select / Complete</small></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kaseya tool stack (RMM, EDR, backups)</td>
+            <td><span class="yes">&check;</span></td>
+            <td><span class="yes">&check;</span></td>
+            <td class="featured-col"><span class="yes">&check;</span></td>
+            <td><span class="yes">&check;</span></td>
+          </tr>
+          <tr>
+            <td>Office / M365 license management</td>
+            <td><span class="yes">&check;</span></td>
+            <td><span class="yes">&check;</span></td>
+            <td class="featured-col"><span class="yes">&check;</span></td>
+            <td><span class="yes">&check;</span></td>
+          </tr>
+          <tr>
+            <td>Endpoint management &amp; security</td>
+            <td><span class="yes">&check;</span></td>
+            <td><span class="yes">&check;</span></td>
+            <td class="featured-col"><span class="yes">&check;</span></td>
+            <td><span class="yes">&check;</span></td>
+          </tr>
+          <tr>
+            <td>Time-and-materials support</td>
+            <td><span class="yes">&check;</span></td>
+            <td>&mdash;</td>
+            <td class="featured-col">&mdash;</td>
+            <td>&mdash;</td>
+          </tr>
+          <tr>
+            <td>All-you-can-eat helpdesk</td>
+            <td><span class="no">&times;</span></td>
+            <td><span class="yes">&check;</span></td>
+            <td class="featured-col"><span class="yes">&check;</span></td>
+            <td><span class="yes">&check;</span></td>
+          </tr>
+          <tr>
+            <td>Ticketing &amp; SLAs</td>
+            <td><span class="no">&times;</span></td>
+            <td><span class="yes">&check;</span></td>
+            <td class="featured-col"><span class="yes">&check;</span></td>
+            <td><span class="yes">&check;</span></td>
+          </tr>
+          <tr>
+            <td>Benchmark 365 escalation</td>
+            <td><span class="no">&times;</span></td>
+            <td><span class="yes">&check;</span></td>
+            <td class="featured-col"><span class="yes">&check;</span></td>
+            <td><span class="yes">&check;</span></td>
+          </tr>
+          <tr>
+            <td>Hardware as a Service (HaaS)</td>
+            <td><span class="no">&times;</span></td>
+            <td><span class="no">&times;</span></td>
+            <td class="featured-col"><span class="yes">&check;</span></td>
+            <td><span class="yes">&check;</span></td>
+          </tr>
+          <tr>
+            <td>3-year hardware guarantee</td>
+            <td><span class="no">&times;</span></td>
+            <td><span class="no">&times;</span></td>
+            <td class="featured-col"><span class="yes">&check;</span></td>
+            <td><span class="yes">&check;</span></td>
+          </tr>
+          <tr>
+            <td>vCISO available</td>
+            <td><span class="no">&times;</span></td>
+            <td><span class="no">&times;</span></td>
+            <td class="featured-col">Add-on</td>
+            <td><span class="yes">&check;</span></td>
+          </tr>
+          <tr>
+            <td>Retainer / custom terms</td>
+            <td><span class="no">&times;</span></td>
+            <td><span class="no">&times;</span></td>
+            <td class="featured-col"><span class="no">&times;</span></td>
+            <td><span class="yes">&check;</span></td>
+          </tr>
+          <tr>
+            <td>Quarterly strategic review</td>
+            <td><span class="no">&times;</span></td>
+            <td><span class="no">&times;</span></td>
+            <td class="featured-col">Add-on</td>
+            <td><span class="yes">&check;</span></td>
+          </tr>
+          <tr>
+            <td>Kaseya User Bundle (add-on)</td>
+            <td>Available</td>
+            <td>Available</td>
+            <td class="featured-col">Available</td>
+            <td>Available</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Kaseya User Bundle deep-dive -->
+<section class="content-section content-section--soft">
+  <div class="container">
+    <div class="split">
+      <div class="split__content">
+        <span class="eyebrow">Per-seat security add-on</span>
+        <h2>The Kaseya User Bundle.</h2>
+        <p>
+          Six per-seat security capabilities, available across any tier. Use it to layer
+          user-specific protection on top of the device-level coverage that comes with the base
+          plans. Most clients add it to all seats; a few apply it selectively to higher-risk
+          users.
+        </p>
+        <ul class="feature-list">
+          <li><strong>Email security filter</strong> &mdash; spam, anti-phishing, attachment scanning</li>
+          <li><strong>Security awareness training</strong> &mdash; HIPAA, CMMC, FERPA, general awareness, custom internal content</li>
+          <li><strong>Phishing testing</strong> &mdash; simulated phishing campaigns and reporting</li>
+          <li><strong>SaaS backups</strong> &mdash; Office 365 / M365 protected against deletion and ransomware</li>
+          <li><strong>SaaS Alerts</strong> &mdash; security monitoring across the SaaS apps users actually log into</li>
+          <li><strong>Dark Web Monitoring</strong> &mdash; per-user credential exposure detection</li>
+        </ul>
+      </div>
+      <div class="split__media">
+        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200&q=80&auto=format&fit=crop" alt="Security stack" />
+        <span class="split__media-label">Per-seat add-on</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Enterprise detail -->
+<section class="content-section">
+  <div class="container">
+    <div class="split split--reverse">
+      <div class="split__media">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80&auto=format&fit=crop" alt="Enterprise consulting" />
+        <span class="split__media-label">Enterprise tier</span>
+      </div>
+      <div class="split__content">
+        <span class="eyebrow">For larger or specialized environments</span>
+        <h2>Enterprise &mdash; Select &amp; Complete.</h2>
+        <p>
+          Customization over convention. The Enterprise tier exists for organizations whose IT
+          needs don't map cleanly onto a packaged plan &mdash; whether that's because of scale,
+          compliance overhead, or just a desire to write the contract differently.
+        </p>
+        <p>
+          <strong>Select</strong> is a hybrid model: AeroCMS fills specific gaps in your stack
+          (general IT support, outcome-based engagements) without taking ownership of everything.
+          <strong>Complete</strong> is end-to-end &mdash; full IT operations from helpdesk to
+          strategic roadmap.
+        </p>
+        <p style="font-size:14px; color: var(--ink-500);">
+          <strong>Contract structure:</strong> Retainer agreements with X dollars / Y days per
+          month, minimum spend, and a variance percentage. Customization over convention.
+        </p>
+        <a href="contact.html" class="btn btn--primary">Talk to Enterprise &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQs -->
+<section class="content-section content-section--soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Plan questions</span>
+      <h2>Frequently asked.</h2>
+    </div>
+    <div class="faq">
+      <details class="faq__item">
+        <summary>How are plans actually priced?</summary>
+        <p>Pricing is per-seat (or per-device, depending on workload) and scales with the tier you choose. We quote against an inventory we collect during the discovery conversation &mdash; not against a published price sheet. This keeps the pricing honest to what you actually need.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Can I move between tiers?</summary>
+        <p>Yes. Most clients start at Essentials or Plus and move up to Premium as confidence in the engagement grows. Moving up is straightforward; moving down requires a contract notice period (varies by tier).</p>
+      </details>
+      <details class="faq__item">
+        <summary>What's the contract length?</summary>
+        <p>Essentials and Plus are typically month-to-month or annual. Premium (with HaaS) requires a longer commitment because of the hardware lease. Enterprise terms are negotiated &mdash; we have retainer structures that range from 6 months to 3 years.</p>
+      </details>
+      <details class="faq__item">
+        <summary>What does "all-you-can-eat helpdesk" actually mean?</summary>
+        <p>It means support is included in the monthly fee instead of being billed per ticket. Your team can open tickets without thinking about cost. We escalate through Benchmark 365's tier 0-4 model for issues that need deeper specialists. There's no fair-use ceiling we enforce silently.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Is the Kaseya User Bundle required?</summary>
+        <p>No. It's an add-on on every tier. Some clients add it for all seats; some apply it selectively to exec-level or finance users where credential exposure is the bigger risk. We'll help you decide.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Do you offer co-managed IT?</summary>
+        <p>Yes &mdash; that's typically the Enterprise Select arrangement. If you have internal IT staff and need AeroCMS to fill specific gaps (after-hours coverage, specialist expertise, project surge capacity), we'll design the engagement around what your team owns and what we own.</p>
+      </details>
+      <details class="faq__item">
+        <summary>What if my business has compliance requirements (HIPAA, PCI, CMMC)?</summary>
+        <p>We work in those environments. Compliance-readiness work is typically scoped separately as a project (gap analysis, policy work, controls implementation), then ongoing compliance is baked into the plan we recommend. Often that's Premium or Enterprise.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA strip -->
+<section class="cta-strip">
+  <div class="container cta-strip__inner">
+    <div>
+      <h2>Not sure which tier fits?</h2>
+      <p>Start with a discovery call. We'll listen and recommend &mdash; no obligation either way.</p>
+    </div>
+    <a href="contact.html" class="btn btn--primary btn--lg">Book a Discovery Call</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <img src="assets/logos/AeroCMS-Logo-70.png" alt="AeroCMS" width="150" />
+        <p>Aero Computer Management Solutions LLC. With Aero, IT's easy.</p>
+      </div>
+      <div class="site-footer__col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services/it-business.html">IT Business Solutions</a></li>
+          <li><a href="services/security.html">Security Solutions</a></li>
+          <li><a href="services/cloud.html">Cloud Services</a></li>
+          <li><a href="services/hardware.html">Hardware as a Service</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html#team">Team</a></li>
+          <li><a href="plans.html">Plans</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="news.html">News</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:5416052186">(541) 605-2186</a></li>
+          <li>P.O. Box 1433<br />Nampa, ID 83653</li>
+          <li>Mon-Fri, 8am-5pm MST</li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h5>Offices</h5>
+        <ul>
+          <li>Nampa, ID</li>
+          <li>Bellevue, WA</li>
+          <li>La Grande, OR</li>
+          <li>Cleveland, OH</li>
+          <li>Birmingham, AL</li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__base">
+      <span>&copy; 2026 Aero Computer Management Solutions LLC. All rights reserved.</span>
+      <span class="site-footer__mockup-tag">Redesign mockup &middot; not production</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuToggle');
+  const nav = document.querySelector('.site-nav');
+  menuBtn.addEventListener('click', () => {
+    const open = nav.classList.toggle('site-nav--open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('site-nav--open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+  }));
+</script>
+
+</body>
+</html>

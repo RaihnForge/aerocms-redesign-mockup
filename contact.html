@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact - AeroCMS</title>
+<meta name="description" content="Reach AeroCMS by phone, form, or in-person at any of our five offices. Mon-Fri, 8am-5pm MST." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" href="assets/logos/AeroCMS-Logo-70.png" />
+<style>
+  .contact-layout {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 64px;
+    align-items: start;
+  }
+  .contact-form-box {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    box-shadow: var(--shadow-sm);
+  }
+  .contact-form-box h2 { font-size: 28px; margin-bottom: 8px; }
+  .contact-form-box > p { color: var(--ink-500); margin-bottom: 28px; }
+  .contact-form-box label { display: block; margin-bottom: 18px; }
+  .contact-form-box label > span {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink-700);
+    margin-bottom: 6px;
+  }
+  .contact-form-box input,
+  .contact-form-box select,
+  .contact-form-box textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-family: inherit;
+    font-size: 15px;
+    background: #fff;
+    transition: border-color .15s ease, box-shadow .15s ease;
+  }
+  .contact-form-box input:focus,
+  .contact-form-box select:focus,
+  .contact-form-box textarea:focus {
+    outline: none;
+    border-color: var(--teal-500);
+    box-shadow: 0 0 0 3px rgba(44,157,183,.15);
+  }
+  .contact-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .contact-form-row label { margin-bottom: 18px; }
+  .contact-side h3 {
+    font-size: 20px;
+    margin: 0 0 12px;
+  }
+  .contact-side .info-block {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    margin-bottom: 16px;
+  }
+  .contact-side .info-block strong {
+    display: block;
+    color: var(--teal-700);
+    font-family: var(--font-display);
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  .contact-side .info-block a {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--ink-900);
+    font-family: var(--font-display);
+    letter-spacing: -.01em;
+  }
+  .contact-side .info-block a:hover { color: var(--teal-700); }
+  .contact-side .info-block p {
+    margin: 0;
+    color: var(--ink-500);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .social-buttons { display: flex; gap: 8px; margin-top: 12px; }
+  .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; height: 40px;
+    background: var(--bg-soft);
+    color: var(--teal-700);
+    border-radius: 8px;
+    transition: all .15s ease;
+  }
+  .social-button:hover {
+    background: var(--teal-500);
+    color: #fff;
+  }
+  .social-button svg { width: 18px; height: 18px; }
+  @media (max-width: 960px) {
+    .contact-layout { grid-template-columns: 1fr; gap: 32px; }
+    .contact-form-row { grid-template-columns: 1fr; gap: 0; }
+    .contact-form-box { padding: 28px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="container utility-bar__inner">
+    <span class="utility-bar__hours">Mon-Fri, 8am-5pm MST</span>
+    <span class="utility-bar__divider"></span>
+    <a href="tel:5416052186" class="utility-bar__phone">(541) 605-2186</a>
+    <span class="utility-bar__divider"></span>
+    <span class="utility-bar__offices">Nampa &middot; Bellevue &middot; La Grande &middot; Cleveland &middot; Birmingham</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="index.html" class="site-header__brand"><img src="assets/logos/AeroCMS-Logo-70.png" alt="AeroCMS" width="160" /></a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="plans.html">Plans</a>
+      <a href="resources.html">Resources</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn btn--primary site-header__cta">Book an Appointment</a>
+    <button class="site-header__menu" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="page-hero page-hero--image" style="background-image: linear-gradient(135deg, rgba(15,42,51,.85), rgba(22,98,122,.70)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1800&q=80&auto=format&fit=crop'); background-size: cover; background-position: center;">
+  <div class="container">
+    <div class="page-hero__inner">
+      <nav class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb__sep">&rsaquo;</span>Contact</nav>
+      <span class="eyebrow eyebrow--light">Get in touch</span>
+      <h1 class="page-hero__title">Tell us what you're trying to figure out.</h1>
+      <p class="page-hero__lead">
+        Pick up the phone, fill out the form, or visit one of our five offices. Our technical staff
+        is standing by to support you &mdash; and you'll know the human you're talking to by the
+        end of the first call.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact form + info -->
+<section class="content-section">
+  <div class="container">
+    <div class="contact-layout">
+      <!-- Form -->
+      <div class="contact-form-box">
+        <h2>Send us a message.</h2>
+        <p>We respond within one business day. Most discovery calls are scheduled within 48 hours.</p>
+        <form onsubmit="event.preventDefault(); document.getElementById('contact-status').textContent='Thanks! We will be in touch within one business day.'; this.style.opacity='0.6';">
+          <div class="contact-form-row">
+            <label>
+              <span>Name <span style="color: var(--accent);">*</span></span>
+              <input type="text" required placeholder="Your name" />
+            </label>
+            <label>
+              <span>Email <span style="color: var(--accent);">*</span></span>
+              <input type="email" required placeholder="you@business.com" />
+            </label>
+          </div>
+          <div class="contact-form-row">
+            <label>
+              <span>Company</span>
+              <input type="text" placeholder="Your company" />
+            </label>
+            <label>
+              <span>Phone</span>
+              <input type="tel" placeholder="(555) 123-4567" />
+            </label>
+          </div>
+          <label>
+            <span>Subject <span style="color: var(--accent);">*</span></span>
+            <select required>
+              <option value="">Select a topic...</option>
+              <option>Schedule an Appointment</option>
+              <option>General Inquiry</option>
+              <option>IT Business Solutions</option>
+              <option>Security Solutions</option>
+              <option>Cloud Services</option>
+              <option>Hardware as a Service</option>
+              <option>Support (existing client)</option>
+              <option>Billing</option>
+            </select>
+          </label>
+          <label>
+            <span>Message <span style="color: var(--accent);">*</span></span>
+            <textarea rows="5" required placeholder="A sentence or two about what you're looking for is plenty. We'll take it from there."></textarea>
+          </label>
+          <button type="submit" class="btn btn--primary btn--lg btn--block">Submit</button>
+          <p id="contact-status" style="text-align: center; margin-top: 16px; font-size: 14px; color: var(--success); font-weight: 600;"></p>
+        </form>
+      </div>
+
+      <!-- Side info -->
+      <div class="contact-side">
+        <h3>By phone</h3>
+        <div class="info-block">
+          <strong>Call us</strong>
+          <a href="tel:5416052186">(541) 605-2186</a>
+          <p style="margin-top: 8px;">Monday-Friday, 8am-5pm MST.<br />Existing clients: use your client portal for off-hours support tickets.</p>
+        </div>
+
+        <h3 style="margin-top: 24px;">By mail</h3>
+        <div class="info-block">
+          <strong>Mailing address</strong>
+          <p>Aero Computer Management Solutions LLC<br />P.O. Box 1433<br />Nampa, ID 83653</p>
+        </div>
+
+        <h3 style="margin-top: 24px;">Social</h3>
+        <div class="info-block">
+          <strong>Follow along</strong>
+          <p>Field notes, security alerts, and the occasional team photo.</p>
+          <div class="social-buttons">
+            <a href="https://www.facebook.com/aerocms/" class="social-button" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-button" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Offices -->
+<section class="content-section content-section--soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Where to find us</span>
+      <h2>Five offices. Nationwide coverage.</h2>
+      <p>Headquartered in Idaho, with team members across four other regions for onsite work coast-to-coast.</p>
+    </div>
+    <div class="location-grid">
+      <div class="location-card">
+        <svg class="location-card__pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-linejoin="round" /><circle cx="12" cy="10" r="3" /></svg>
+        <h4>Nampa</h4>
+        <span class="location-card__region">Idaho &middot; HQ</span>
+        <p style="margin: 12px 0 0; font-size: 13px; color: var(--ink-500);">P.O. Box 1433<br />Nampa, ID 83653</p>
+      </div>
+      <div class="location-card">
+        <svg class="location-card__pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-linejoin="round" /><circle cx="12" cy="10" r="3" /></svg>
+        <h4>Bellevue</h4>
+        <span class="location-card__region">Washington</span>
+        <p style="margin: 12px 0 0; font-size: 13px; color: var(--ink-500);">Pacific Northwest<br />Greater Seattle area</p>
+      </div>
+      <div class="location-card">
+        <svg class="location-card__pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-linejoin="round" /><circle cx="12" cy="10" r="3" /></svg>
+        <h4>La Grande</h4>
+        <span class="location-card__region">Oregon</span>
+        <p style="margin: 12px 0 0; font-size: 13px; color: var(--ink-500);">Eastern Oregon<br />Industrial corridor</p>
+      </div>
+      <div class="location-card">
+        <svg class="location-card__pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-linejoin="round" /><circle cx="12" cy="10" r="3" /></svg>
+        <h4>Cleveland</h4>
+        <span class="location-card__region">Ohio</span>
+        <p style="margin: 12px 0 0; font-size: 13px; color: var(--ink-500);">Midwest hub<br />Manufacturing corridor</p>
+      </div>
+      <div class="location-card">
+        <svg class="location-card__pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-linejoin="round" /><circle cx="12" cy="10" r="3" /></svg>
+        <h4>Birmingham</h4>
+        <span class="location-card__region">Alabama</span>
+        <p style="margin: 12px 0 0; font-size: 13px; color: var(--ink-500);">Southeast region<br />Multi-state coverage</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact FAQ -->
+<section class="content-section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Before you reach out</span>
+      <h2>Frequently asked.</h2>
+    </div>
+    <div class="faq">
+      <details class="faq__item">
+        <summary>How fast will you respond?</summary>
+        <p>One business day for form submissions. Same business day for phone calls during MST hours. Existing client support tickets are SLA-bound to your plan tier.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Do I need to know what I want before contacting you?</summary>
+        <p>Not at all. Most of our best engagements start with a vague "we know something's not working but can't quite say what." We'll help you name it.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Will the first call be sales-heavy?</summary>
+        <p>No. The first conversation is discovery &mdash; we ask questions, you talk, we listen. If there's a fit we'll say so. If there isn't we'll tell you that too, and recommend who might be a better match.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Can we meet in person?</summary>
+        <p>Yes &mdash; we have team members in five regions and travel for engagements when it matters. Tell us where you are; we'll figure out who's closest.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <img src="assets/logos/AeroCMS-Logo-70.png" alt="AeroCMS" width="150" />
+        <p>Aero Computer Management Solutions LLC. With Aero, IT's easy.</p>
+      </div>
+      <div class="site-footer__col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services/it-business.html">IT Business Solutions</a></li>
+          <li><a href="services/security.html">Security Solutions</a></li>
+          <li><a href="services/cloud.html">Cloud Services</a></li>
+          <li><a href="services/hardware.html">Hardware as a Service</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html#team">Team</a></li>
+          <li><a href="plans.html">Plans</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="news.html">News</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:5416052186">(541) 605-2186</a></li>
+          <li>P.O. Box 1433<br />Nampa, ID 83653</li>
+          <li>Mon-Fri, 8am-5pm MST</li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h5>Offices</h5>
+        <ul>
+          <li>Nampa, ID</li>
+          <li>Bellevue, WA</li>
+          <li>La Grande, OR</li>
+          <li>Cleveland, OH</li>
+          <li>Birmingham, AL</li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__base">
+      <span>&copy; 2026 Aero Computer Management Solutions LLC. All rights reserved.</span>
+      <span class="site-footer__mockup-tag">Redesign mockup &middot; not production</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuToggle');
+  const nav = document.querySelector('.site-nav');
+  menuBtn.addEventListener('click', () => {
+    const open = nav.classList.toggle('site-nav--open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('site-nav--open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+  }));
+</script>
+
+</body>
+</html>

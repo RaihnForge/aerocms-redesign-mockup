@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Services - AeroCMS</title>
+<meta name="description" content="Four pillars, one partner. IT Business Solutions, Security, Cloud, and Hardware as a Service &mdash; custom-tailored to your business." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" href="assets/logos/AeroCMS-Logo-70.png" />
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="container utility-bar__inner">
+    <span class="utility-bar__hours">Mon-Fri, 8am-5pm MST</span>
+    <span class="utility-bar__divider"></span>
+    <a href="tel:5416052186" class="utility-bar__phone">(541) 605-2186</a>
+    <span class="utility-bar__divider"></span>
+    <span class="utility-bar__offices">Nampa &middot; Bellevue &middot; La Grande &middot; Cleveland &middot; Birmingham</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="index.html" class="site-header__brand" aria-label="AeroCMS home">
+      <img src="assets/logos/AeroCMS-Logo-70.png" alt="AeroCMS" width="160" />
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="plans.html">Plans</a>
+      <a href="resources.html">Resources</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn btn--primary site-header__cta">Book an Appointment</a>
+    <button class="site-header__menu" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="page-hero page-hero--image" style="background-image: linear-gradient(135deg, rgba(15,42,51,.85), rgba(22,98,122,.70)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1800&q=80&auto=format&fit=crop'); background-size: cover; background-position: center;">
+  <div class="container">
+    <div class="page-hero__inner">
+      <nav class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb__sep">&rsaquo;</span>Services</nav>
+      <span class="eyebrow eyebrow--light">What we do</span>
+      <h1 class="page-hero__title">Four pillars. One partner.</h1>
+      <p class="page-hero__lead">
+        We don't pick which corner of your IT we want to own. We do the whole stack &mdash; from the
+        consulting that decides what gets built, to the hardware sitting on the desks, to the SOC
+        watching for threats at 3am.
+      </p>
+      <div class="page-hero__ctas">
+        <a href="#tiles" class="btn btn--primary btn--lg">Explore Services</a>
+        <a href="plans.html" class="btn btn--ghost btn--ghost-light btn--lg">See Plans</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Big service tiles -->
+<section class="content-section" id="tiles">
+  <div class="container">
+    <article class="big-service-tile">
+      <div class="big-service-tile__media">
+        <span class="big-service-tile__media-label">01 &middot; Consulting + Implementation</span>
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200&q=80&auto=format&fit=crop" alt="IT consulting session" />
+      </div>
+      <div class="big-service-tile__body">
+        <span class="eyebrow">For businesses figuring out their IT</span>
+        <h3>IT Business Solutions</h3>
+        <p>
+          Full-spectrum IT consulting and managed delivery. We understand the business, propose
+          options, implement the strategy &mdash; and stay on as your team. Three-step process.
+          Never assumed, always approved.
+        </p>
+        <ul class="feature-list">
+          <li>Discovery, requirements, and gap analysis</li>
+          <li>Multiple solution options presented for your approval</li>
+          <li>Implementation by experts, with ongoing management</li>
+        </ul>
+        <a href="services/it-business.html" class="btn btn--primary">Explore IT Business Solutions &rarr;</a>
+      </div>
+    </article>
+
+    <article class="big-service-tile big-service-tile--reverse">
+      <div class="big-service-tile__body">
+        <span class="eyebrow">For businesses protecting themselves</span>
+        <h3>Security Solutions</h3>
+        <p>
+          Multi-layer protection sized to your risk. From basic patch hygiene to virtual CISO
+          oversight. Most businesses are either underprotected or wildly overspending on redundant
+          tools. We help you find the right line.
+        </p>
+        <ul class="feature-list">
+          <li>vCISO, SIEM, MDR, EDR coverage</li>
+          <li>Penetration testing and security risk assessments</li>
+          <li>Security awareness training and phishing simulations</li>
+        </ul>
+        <a href="services/security.html" class="btn btn--primary">Explore Security Solutions &rarr;</a>
+      </div>
+      <div class="big-service-tile__media">
+        <span class="big-service-tile__media-label">02 &middot; Multi-layer defense</span>
+        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&q=80&auto=format&fit=crop" alt="Cybersecurity" />
+      </div>
+    </article>
+
+    <article class="big-service-tile">
+      <div class="big-service-tile__media">
+        <span class="big-service-tile__media-label">03 &middot; Cloud + Remote Work</span>
+        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1200&q=80&auto=format&fit=crop" alt="Cloud infrastructure" />
+      </div>
+      <div class="big-service-tile__body">
+        <span class="eyebrow">For businesses going remote-first</span>
+        <h3>Cloud Services</h3>
+        <p>
+          Shared, dedicated, or hybrid &mdash; on Azure or VMware. Cloud computing eliminates racks
+          of in-house servers, opens up remote work from anywhere, and (sized right) reduces your
+          IT spend instead of expanding it.
+        </p>
+        <ul class="feature-list">
+          <li>Microsoft Azure and VMware certified deployments</li>
+          <li>Dedicated private cloud for sensitive workloads</li>
+          <li>Free excessive-spending audit before you commit</li>
+        </ul>
+        <a href="services/cloud.html" class="btn btn--primary">Explore Cloud Services &rarr;</a>
+      </div>
+    </article>
+
+    <article class="big-service-tile big-service-tile--reverse">
+      <div class="big-service-tile__body">
+        <span class="eyebrow">For businesses tired of capex hits</span>
+        <h3>Hardware as a Service</h3>
+        <p>
+          Lease the gear, skip the upfront. Operational expense instead of capital expense, with a
+          3-year guarantee, refresh handled at the back end, and rapid replacement when something
+          dies on you. Always have the technology you need to stay competitive.
+        </p>
+        <ul class="feature-list">
+          <li>Computers, servers, networking, and business technology</li>
+          <li>3-year hardware guarantee with refresh handled</li>
+          <li>OpEx-friendly monthly, no large capital outlay</li>
+        </ul>
+        <a href="services/hardware.html" class="btn btn--primary">Explore Hardware as a Service &rarr;</a>
+      </div>
+      <div class="big-service-tile__media">
+        <span class="big-service-tile__media-label">04 &middot; Hardware lifecycle</span>
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80&auto=format&fit=crop" alt="Computer hardware" />
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="content-section content-section--soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">How an engagement runs</span>
+      <h2>Three steps. No surprises.</h2>
+      <p>Every AeroCMS engagement follows the same arc. We won't move to the next step until you approve the last one.</p>
+    </div>
+    <div class="process">
+      <div class="process-step">
+        <div class="process-step__num">1</div>
+        <h3>Understand your business</h3>
+        <p>An IT consulting session to gather data and understand your processes &mdash; the good, the bad, and the outdated. No assumption that we know your business better than you do.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step__num">2</div>
+        <h3>Present the options</h3>
+        <p>A few proposed solutions, within your budget and resource constraints. We discuss the merits of each. You take your pick. We don't proceed until you approve.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step__num">3</div>
+        <h3>Implement and manage</h3>
+        <p>Quickly and efficiently set up your new stack, then stick around for ongoing management and maintenance. AeroCMS is a comprehensive provider, not a one-time installer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Industries -->
+<section class="content-section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Who we work with</span>
+      <h2>Industries we serve.</h2>
+      <p>From oilfield services to higher education to healthcare &mdash; with deep experience where compliance, uptime, and security all matter.</p>
+    </div>
+    <div class="industry-grid">
+      <article class="industry-card">
+        <div class="industry-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2L3 7v10l9 5 9-5V7l-9-5z" stroke-linejoin="round" /><path d="M3 7l9 5 9-5M12 12v10" />
+          </svg>
+        </div>
+        <h4>Oilfield &amp; Industrial</h4>
+        <p>Subsea, robotics, vertical-monopoly operators</p>
+      </article>
+      <article class="industry-card">
+        <div class="industry-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3 3h18v14H3zM7 21h10M12 17v4" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <h4>Tech &amp; SaaS</h4>
+        <p>Mid-stage product companies, infrared and AI vendors</p>
+      </article>
+      <article class="industry-card">
+        <div class="industry-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3 9l9-6 9 6v12H3V9z" stroke-linejoin="round" /><path d="M9 21V12h6v9" />
+          </svg>
+        </div>
+        <h4>Professional Services</h4>
+        <p>Legal, accounting, consulting firms</p>
+      </article>
+      <article class="industry-card">
+        <div class="industry-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2v20M5 9l7-7 7 7M5 15l7 7 7-7" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <h4>Healthcare</h4>
+        <p>HIPAA-aligned environments, clinics, multi-site practices</p>
+      </article>
+      <article class="industry-card">
+        <div class="industry-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" />
+          </svg>
+        </div>
+        <h4>Education</h4>
+        <p>K-12, higher ed, and FERPA-aligned operations</p>
+      </article>
+      <article class="industry-card">
+        <div class="industry-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3" y="6" width="18" height="13" rx="2" /><path d="M16 3v6M8 3v6" stroke-linecap="round" />
+          </svg>
+        </div>
+        <h4>Finance</h4>
+        <p>PCI-DSS compliance, banking-adjacent operations</p>
+      </article>
+      <article class="industry-card">
+        <div class="industry-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" />
+          </svg>
+        </div>
+        <h4>Distributed Teams</h4>
+        <p>Remote-first, multi-state, hybrid operations</p>
+      </article>
+      <article class="industry-card">
+        <div class="industry-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <h4>Government &amp; Defense</h4>
+        <p>CMMC-aligned environments, compliance-heavy</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CTA strip -->
+<section class="cta-strip">
+  <div class="container cta-strip__inner">
+    <div>
+      <h2>Not sure which pillar you need?</h2>
+      <p>Start with a discovery call. We'll listen, ask a lot of questions, and tell you straight.</p>
+    </div>
+    <a href="contact.html" class="btn btn--primary btn--lg">Book a Discovery Call</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <img src="assets/logos/AeroCMS-Logo-70.png" alt="AeroCMS" width="150" />
+        <p>Aero Computer Management Solutions LLC. With Aero, IT's easy.</p>
+      </div>
+      <div class="site-footer__col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services/it-business.html">IT Business Solutions</a></li>
+          <li><a href="services/security.html">Security Solutions</a></li>
+          <li><a href="services/cloud.html">Cloud Services</a></li>
+          <li><a href="services/hardware.html">Hardware as a Service</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html#team">Team</a></li>
+          <li><a href="plans.html">Plans</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="news.html">News</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:5416052186">(541) 605-2186</a></li>
+          <li>P.O. Box 1433<br />Nampa, ID 83653</li>
+          <li>Mon-Fri, 8am-5pm MST</li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h5>Offices</h5>
+        <ul>
+          <li>Nampa, ID</li>
+          <li>Bellevue, WA</li>
+          <li>La Grande, OR</li>
+          <li>Cleveland, OH</li>
+          <li>Birmingham, AL</li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__base">
+      <span>&copy; 2026 Aero Computer Management Solutions LLC. All rights reserved.</span>
+      <span class="site-footer__mockup-tag">Redesign mockup &middot; not production</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuToggle');
+  const nav = document.querySelector('.site-nav');
+  menuBtn.addEventListener('click', () => {
+    const open = nav.classList.toggle('site-nav--open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('site-nav--open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+  }));
+</script>
+
+</body>
+</html>
