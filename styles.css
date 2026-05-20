@@ -632,8 +632,12 @@ h1, h2, h3, h4, h5 {
   border: 1px solid var(--border);
   padding: 6px;
 }
-.partner-card__mark--logo img,
-.partner-card__mark--logo svg {
+.partner-card__mark--logo-dark {
+  padding: 7px;
+  border: none;
+}
+.partner-card__mark img,
+.partner-card__mark svg {
   width: 100%;
   height: 100%;
   object-fit: contain;
