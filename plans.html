@@ -25,11 +25,11 @@
 
 <header class="site-header">
   <div class="container site-header__inner">
-    <a href="index.html" class="site-header__brand"><img src="assets/logos/AeroCMS-Logo-70.png" alt="AeroCMS" width="160" /></a>
+    <a href="index.html" class="site-header__brand" aria-label="AeroCMS home"><img src="assets/logos/AeroCMS-Logo-70.png" alt="AeroCMS" width="160" /></a>
     <nav class="site-nav" aria-label="Primary">
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
-      <a href="plans.html">Plans</a>
+      <a href="plans.html" aria-current="page">Plans</a>
       <a href="resources.html">Resources</a>
       <a href="news.html">News</a>
       <a href="contact.html">Contact</a>
@@ -40,12 +40,12 @@
 </header>
 
 <!-- Hero -->
-<section class="page-hero">
+<section class="page-hero page-hero--image" style="background-image: linear-gradient(135deg, rgba(15,42,51,.85), rgba(22,98,122,.70)), url('https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1800&q=80&auto=format&fit=crop'); background-size: cover; background-position: center;">
   <div class="container">
     <div class="page-hero__inner">
       <nav class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb__sep">&rsaquo;</span>Plans</nav>
-      <span class="eyebrow">Pick your altitude</span>
-      <h1 class="page-hero__title">Plans built around <span style="background: linear-gradient(135deg, var(--teal-500), var(--teal-700)); -webkit-background-clip: text; background-clip: text; color: transparent;">how much IT you want to own.</span></h1>
+      <span class="eyebrow eyebrow--light">Pick your altitude</span>
+      <h1 class="page-hero__title">Plans built around how much IT you want to own.</h1>
       <p class="page-hero__lead">
         Four tiers, plus the Kaseya User Bundle as a per-seat add-on across any of them. Convention
         over configuration on the lower tiers, full customization at Enterprise. No long-term lock-in

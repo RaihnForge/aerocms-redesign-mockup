@@ -201,6 +201,20 @@ h1, h2, h3, h4, h5 {
   position: relative;
 }
 .site-nav a:hover { color: var(--teal-600); }
+.site-nav a[aria-current="page"] {
+  color: var(--teal-700);
+  font-weight: 600;
+}
+.site-nav a[aria-current="page"]::after {
+  content: '';
+  position: absolute;
+  bottom: -26px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--teal-500);
+  border-radius: 2px;
+}
 .site-header__cta { margin-left: 8px; }
 .site-header__menu {
   display: none;
@@ -632,6 +646,28 @@ h1, h2, h3, h4, h5 {
   font-size: 13px;
   color: var(--ink-500);
   display: block;
+}
+
+.team-card__linkedin,
+.team-card-detail__linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  font-size: 12px;
+  color: var(--teal-700);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+.team-card__linkedin:hover,
+.team-card-detail__linkedin:hover {
+  color: var(--teal-500);
+}
+.team-card__linkedin svg,
+.team-card-detail__linkedin svg {
+  width: 14px;
+  height: 14px;
 }
 
 /* Testimonial */
@@ -1674,6 +1710,13 @@ h1, h2, h3, h4, h5 {
   .site-nav--open { display: flex; }
   .site-nav a { padding: 12px 0; border-bottom: 1px solid var(--border); }
   .site-nav a:last-child { border-bottom: 0; }
+  .site-nav a[aria-current="page"]::after { display: none; }
+  .site-nav a[aria-current="page"] {
+    background: var(--bg-soft);
+    margin: 0 -24px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
   .site-header__menu { display: flex; }
   .utility-bar__offices { display: none; }
 }
