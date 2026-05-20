@@ -357,10 +357,42 @@ h1, h2, h3, h4, h5 {
   background: var(--success);
   box-shadow: 0 0 0 4px rgba(43,191,122,.25);
   animation: pulse 2s ease-in-out infinite;
+  flex-shrink: 0;
 }
+.hero__card--2,
+.hero__card--3,
+.hero__card--4 { position: absolute; }
 .hero__card--2 { top: 28%; right: -6%; animation-delay: -2s; }
 .hero__card--3 { bottom: 22%; left: -8%; animation-delay: -4s; }
 .hero__card--4 { bottom: 4%;  right: 4%; animation-delay: -6s; }
+
+/* Small status indicator dot in the corner of cards 2, 3, 4 */
+.hero__card-led {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--teal-500);
+  box-shadow: 0 0 0 2.5px rgba(44,157,183,.25);
+  animation: pulse-led 2.4s ease-in-out infinite;
+}
+.hero__card--2 .hero__card-led { animation-delay: 0s; }
+.hero__card--3 .hero__card-led {
+  animation-delay: -0.8s;
+  background: #C24E20;
+  box-shadow: 0 0 0 2.5px rgba(226, 94, 43, .25);
+}
+.hero__card--4 .hero__card-led {
+  animation-delay: -1.6s;
+  background: var(--success);
+  box-shadow: 0 0 0 2.5px rgba(43, 191, 122, .25);
+}
+@keyframes pulse-led {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%      { transform: scale(1.15); opacity: 0.65; }
+}
 
 @keyframes float {
   0%, 100% { transform: translateY(0); }
@@ -391,18 +423,33 @@ h1, h2, h3, h4, h5 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 56px;
+  gap: 52px;
   flex-wrap: wrap;
 }
-.trust-strip__logos span {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 18px;
-  color: var(--ink-300);
-  letter-spacing: -.01em;
-  transition: color .15s ease;
+.trust-strip__logos img {
+  height: 30px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.55;
+  transition: filter .2s ease, opacity .2s ease, transform .2s ease;
 }
-.trust-strip__logos span:hover { color: var(--ink-700); }
+.trust-strip__logos img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: translateY(-2px);
+}
+.trust-strip__logos svg {
+  height: 26px;
+  width: auto;
+  opacity: 0.55;
+  transition: opacity .2s ease, transform .2s ease;
+}
+.trust-strip__logos svg:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
 
 /* Services */
 .services {
@@ -437,7 +484,30 @@ h1, h2, h3, h4, h5 {
   color: var(--teal-600);
   border-radius: var(--radius-sm);
   margin-bottom: 24px;
+  transition: transform .2s ease, background .2s ease;
 }
+.service-card:hover .service-card__icon { transform: scale(1.06); }
+.service-card--security .service-card__icon {
+  background: rgba(226, 94, 43, .12);
+  color: #C24E20;
+}
+.service-card--cloud .service-card__icon {
+  background: rgba(74, 144, 217, .12);
+  color: #2D6AA8;
+}
+.service-card--hardware .service-card__icon {
+  background: rgba(217, 160, 74, .15);
+  color: #B8842A;
+}
+.service-card--security:hover { border-color: rgba(226, 94, 43, .35); }
+.service-card--cloud:hover    { border-color: rgba(74, 144, 217, .35); }
+.service-card--hardware:hover { border-color: rgba(217, 160, 74, .35); }
+.service-card--security ul li::before  { background: #C24E20; }
+.service-card--cloud ul li::before     { background: #2D6AA8; }
+.service-card--hardware ul li::before  { background: #B8842A; }
+.service-card--security .service-card__link  { color: #C24E20; }
+.service-card--cloud .service-card__link     { color: #2D6AA8; }
+.service-card--hardware .service-card__link  { color: #B8842A; }
 .service-card__icon svg { width: 28px; height: 28px; }
 .service-card h3 {
   font-size: 24px;
@@ -503,6 +573,23 @@ h1, h2, h3, h4, h5 {
   position: relative;
   transition: transform .2s ease, border-color .2s ease, background .2s ease;
 }
+.plan::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+.plan--good::before     { background: linear-gradient(90deg, var(--teal-300), var(--teal-500)); }
+.plan--better::before   { background: linear-gradient(90deg, var(--teal-500), var(--teal-700)); }
+.plan--best::before     { background: linear-gradient(90deg, var(--accent), var(--accent-d)); }
+.plan--enterprise::before { background: linear-gradient(90deg, rgba(255,255,255,.50), rgba(255,255,255,.15)); }
+.plan--good .plan__tier     { color: var(--teal-300); }
+.plan--better .plan__tier   { color: #80C8DC; }
+.plan--best .plan__tier     { color: var(--accent); }
+.plan--enterprise .plan__tier { color: rgba(255,255,255,.65); }
 .plan:hover {
   transform: translateY(-4px);
   border-color: rgba(255,255,255,.25);
