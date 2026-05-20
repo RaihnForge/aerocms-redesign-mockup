@@ -1521,11 +1521,11 @@ h1, h2, h3, h4, h5 {
   font-size: 15px;
 }
 
-/* Team grid (about page - bigger cards) */
+/* Team grid (about page - compact 6-across with responsive scaling) */
 .team-grid-detail {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
 }
 .team-card-detail {
   background: #fff;
@@ -1534,6 +1534,12 @@ h1, h2, h3, h4, h5 {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.team-card-detail:hover {
+  transform: translateY(-3px);
+  border-color: var(--teal-300);
+  box-shadow: var(--shadow-md);
 }
 .team-card-detail__media {
   aspect-ratio: 1 / 1;
@@ -1553,28 +1559,41 @@ h1, h2, h3, h4, h5 {
 .team-card-detail__initial {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 72px;
+  font-size: 48px;
   color: rgba(255,255,255,.8);
   letter-spacing: .02em;
 }
-.team-card-detail__body { padding: 24px; }
+.team-card-detail__body {
+  padding: 14px 14px 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
 .team-card-detail h4 {
-  font-size: 19px;
-  margin-bottom: 4px;
+  font-size: 15px;
+  margin: 0 0 2px;
+  line-height: 1.25;
 }
 .team-card-detail__role {
   display: block;
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 600;
   color: var(--teal-600);
-  letter-spacing: .04em;
+  letter-spacing: .06em;
   text-transform: uppercase;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 .team-card-detail p {
-  margin: 0;
-  font-size: 14px;
+  margin: 0 0 8px;
+  font-size: 12px;
+  line-height: 1.45;
   color: var(--ink-500);
+  flex-grow: 1;
+}
+.team-card-detail__linkedin {
+  margin-top: auto;
+  padding-top: 8px;
+  font-size: 11px;
 }
 
 /* Service detail sticky aside */
@@ -1703,7 +1722,7 @@ h1, h2, h3, h4, h5 {
   .news-featured__body { padding: 32px; }
   .resource-grid-detailed { grid-template-columns: repeat(2, 1fr); }
   .value-grid { grid-template-columns: 1fr; }
-  .team-grid-detail { grid-template-columns: repeat(2, 1fr); }
+  .team-grid-detail { grid-template-columns: repeat(3, 1fr); }
   .service-detail-layout { grid-template-columns: 1fr; }
   .service-aside { position: static; }
   .big-service-tile,
@@ -1764,6 +1783,6 @@ h1, h2, h3, h4, h5 {
   .office-strip { grid-template-columns: 1fr; }
   .news-grid { grid-template-columns: 1fr; }
   .resource-grid-detailed { grid-template-columns: 1fr; }
-  .team-grid-detail { grid-template-columns: 1fr; }
+  .team-grid-detail { grid-template-columns: repeat(2, 1fr); }
   .content-section { padding: 64px 0; }
 }
