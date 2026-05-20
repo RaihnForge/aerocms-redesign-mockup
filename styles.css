@@ -250,9 +250,9 @@ h1, h2, h3, h4, h5 {
   position: relative;
   padding: 96px 0 120px;
   background:
-    radial-gradient(ellipse 800px 500px at 20% 0%, rgba(44,157,183,.10), transparent 60%),
-    radial-gradient(ellipse 600px 400px at 100% 30%, rgba(255,122,69,.06), transparent 60%),
-    linear-gradient(180deg, #fff 0%, var(--bg-soft) 100%);
+    radial-gradient(ellipse 800px 500px at 20% 0%, rgba(44,157,183,.12), transparent 60%),
+    radial-gradient(ellipse 600px 400px at 100% 30%, rgba(255,122,69,.08), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.45) 0%, rgba(247,245,249,.15) 100%);
   overflow: hidden;
 }
 .hero__inner {
@@ -414,16 +414,18 @@ h1, h2, h3, h4, h5 {
   gap: 24px;
 }
 .service-card {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(6px);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 36px;
-  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease, background .2s ease;
 }
 .service-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-md);
   border-color: var(--teal-300);
+  background: rgba(255, 255, 255, 0.95);
 }
 .service-card__icon {
   width: 56px;
@@ -725,7 +727,8 @@ h1, h2, h3, h4, h5 {
 /* Testimonial */
 .testimonial {
   padding: 96px 0;
-  background: var(--bg-soft);
+  background: rgba(245, 240, 230, 0.40);
+  backdrop-filter: blur(4px);
 }
 .testimonial blockquote {
   max-width: 800px;
@@ -756,18 +759,20 @@ h1, h2, h3, h4, h5 {
 }
 .resource-card {
   display: block;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(6px);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 32px;
   text-decoration: none;
   color: inherit;
-  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease, background .2s ease;
 }
 .resource-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-md);
   border-color: var(--teal-300);
+  background: rgba(255, 255, 255, 0.95);
 }
 .resource-card__tag {
   display: inline-block;
