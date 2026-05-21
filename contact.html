@@ -26,6 +26,45 @@
   }
   .contact-form-box h2 { font-size: 28px; margin-bottom: 8px; }
   .contact-form-box > p { color: var(--ink-500); margin-bottom: 28px; }
+  .contact-form-rep {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 28px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+  .contact-form-rep__avatar {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow: 0 4px 14px rgba(15, 42, 51, .14);
+  }
+  .contact-form-rep__copy { flex: 1; min-width: 0; }
+  .contact-form-rep__heading {
+    font-size: 22px;
+    margin: 0 0 4px;
+    line-height: 1.2;
+  }
+  .contact-form-rep__byline {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--teal-700);
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    margin: 0 0 8px;
+  }
+  .contact-form-rep__copy p:last-child {
+    margin: 0;
+    font-size: 14px;
+    color: var(--ink-500);
+    line-height: 1.5;
+  }
+  @media (max-width: 540px) {
+    .contact-form-rep { flex-direction: column; align-items: flex-start; gap: 14px; }
+  }
   .contact-form-box label { display: block; margin-bottom: 18px; }
   .contact-form-box label > span {
     display: block;
@@ -164,8 +203,14 @@
     <div class="contact-layout">
       <!-- Form -->
       <div class="contact-form-box">
-        <h2>Send us a message.</h2>
-        <p>We respond within one business day. Most discovery calls are scheduled within 48 hours.</p>
+        <div class="contact-form-rep">
+          <img src="assets/team/joshua-keyes.png" alt="Joshua Keyes portrait" class="contact-form-rep__avatar" />
+          <div class="contact-form-rep__copy">
+            <h2 class="contact-form-rep__heading">I'll get back to you personally.</h2>
+            <p class="contact-form-rep__byline">Joshua Keyes &middot; Sales &amp; Onboarding</p>
+            <p>Every submission lands in my inbox. I review each one and respond within one business day &mdash; most discovery calls are scheduled within 48 hours.</p>
+          </div>
+        </div>
         <form onsubmit="event.preventDefault(); document.getElementById('contact-status').textContent='Thanks! We will be in touch within one business day.'; this.style.opacity='0.6';">
           <div class="contact-form-row">
             <label>
