@@ -15,7 +15,8 @@
 
     var ticking = false;
     function update() {
-      bg.style.transform = 'translate3d(0,' + (-window.scrollY * 0.2) + 'px,0)';
+      // Move bg up at 33% of scroll speed (parallax depth feel).
+      bg.style.transform = 'translate3d(0,' + (-window.scrollY * 0.33) + 'px,0)';
       ticking = false;
     }
     window.addEventListener('scroll', function () {

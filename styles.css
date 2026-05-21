@@ -58,16 +58,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Parallax facet background layer (injected by assets/js/parallax.js) */
+/* Parallax facet background layer (injected by assets/js/parallax.js).
+   - Layer is tall enough (600vh) to cover any page scroll at 33% factor.
+   - SVG tiles vertically (repeat-y) so visual stays continuous even on long
+     articles. Sized to ~80vh per tile so the warm/cool gradient cycles
+     across the viewport as you scroll. */
 .bg-parallax {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 250vh;
+  height: 600vh;
   pointer-events: none;
   z-index: -1;
-  background: url('assets/bg-facets.svg') center top / 100% auto no-repeat;
+  background: url('assets/bg-facets.svg') center top / 100% 80vh repeat-y;
   will-change: transform;
 }
 
