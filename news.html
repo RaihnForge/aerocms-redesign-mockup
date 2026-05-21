@@ -164,6 +164,7 @@
   </div>
 </footer>
 
+<script src="assets/js/parallax.js" defer></script>
 <script>
   // Nav menu
   const menuBtn = document.getElementById('menuToggle');
@@ -251,18 +252,16 @@
       const img = pickImage(item);
       const cat = item.primaryCategory || (item.categories || [])[0] || '';
       const externalAttrs = item.isExternal ? ' target="_blank" rel="noopener noreferrer"' : '';
-      const externalChip = item.isExternal
-        ? ' <span class="news-card__external" title="Opens on aerocms.net" aria-label="External link">&#x2197;</span>'
-        : '';
+      const externalLabel = item.isExternal ? ' aria-label="Opens on aerocms.net in a new tab"' : '';
 
       if (featured) {
-        return `<article class="news-featured">
+        return `<article class="news-featured${item.isExternal ? ' news-featured--external' : ''}">
           <div class="news-featured__media">
             <img src="${imgUrl(img.id, 1400)}" alt="${escapeHtml(img.alt)}" data-photographer="${escapeHtml(img.photographer)}" />
           </div>
           <div class="news-featured__body">
             <span class="news-featured__tag">Featured &middot; ${fmtDate(item.pubDate)}</span>
-            <h2><a href="${item.link}"${externalAttrs} style="color: inherit; text-decoration: none;">${escapeHtml(item.title)}${externalChip}</a></h2>
+            <h2><a href="${item.link}"${externalAttrs}${externalLabel} style="color: inherit; text-decoration: none;">${escapeHtml(item.title)}</a></h2>
             <p>${escapeHtml(item.excerpt)}</p>
             <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px; font-size: 13px; color: var(--ink-500);">
               <span>${item.readMinutes} min read</span>
@@ -273,13 +272,13 @@
           </div>
         </article>`;
       }
-      return `<a href="${item.link}"${externalAttrs} class="news-card${item.isExternal ? ' news-card--external' : ''}">
+      return `<a href="${item.link}"${externalAttrs}${externalLabel} class="news-card${item.isExternal ? ' news-card--external' : ''}">
         <div class="news-card__media">
           <img src="${imgUrl(img.id, 900)}" alt="" data-photographer="${escapeHtml(img.photographer)}" />
         </div>
         <div class="news-card__body">
           <span class="news-card__tag">${escapeHtml(cat)}</span>
-          <h3>${escapeHtml(item.title)}${externalChip}</h3>
+          <h3>${escapeHtml(item.title)}</h3>
           <p>${escapeHtml(item.excerpt)}</p>
           <div class="news-card__meta">
             <span>${item.readMinutes} min read</span>
