@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="warmA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5AA69" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#F5AA69" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="warmB" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8945A" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#E8945A" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="warmC" x1="0" y1="1" x2="0.5" y2="0">
+      <stop offset="0%" stop-color="#F5AA69" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#F5AA69" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="coolA" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7896D7" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#7896D7" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="coolB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9FAFE0" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#9FAFE0" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="coolC" x1="1" y1="1" x2="0.5" y2="0">
+      <stop offset="0%" stop-color="#7896D7" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#7896D7" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left cluster: warm orange diagonal facets -->
+  <polygon points="0,0 640,0 0,540" fill="url(#warmA)"/>
+  <polygon points="0,420 480,720 0,1080" fill="url(#warmB)"/>
+  <polygon points="0,1080 640,1200 280,720" fill="url(#warmC)"/>
+  <polygon points="0,0 360,360 0,720" fill="url(#warmA)" opacity="0.55"/>
+  <polygon points="220,0 640,0 360,360" fill="url(#warmB)" opacity="0.5"/>
+  <polygon points="280,720 480,720 360,1200" fill="url(#warmC)" opacity="0.6"/>
+
+  <!-- Right cluster: cool blue diagonal facets -->
+  <polygon points="1280,0 1920,0 1920,540" fill="url(#coolA)"/>
+  <polygon points="1440,540 1920,540 1920,1080" fill="url(#coolB)"/>
+  <polygon points="1640,720 1920,1200 1280,1200" fill="url(#coolC)"/>
+  <polygon points="1560,360 1920,0 1920,720" fill="url(#coolA)" opacity="0.5"/>
+  <polygon points="1280,0 1700,0 1560,360" fill="url(#coolB)" opacity="0.45"/>
+  <polygon points="1560,720 1920,720 1640,1200" fill="url(#coolC)" opacity="0.55"/>
+
+  <!-- Center wash: subtle blend of warm + cool overlapping near midline -->
+  <polygon points="640,0 1280,0 960,360" fill="url(#coolB)" opacity="0.5"/>
+  <polygon points="640,1200 1280,1200 960,840" fill="url(#warmB)" opacity="0.45"/>
+  <polygon points="480,720 960,360 1440,540" fill="url(#warmC)" opacity="0.4"/>
+  <polygon points="480,720 1640,720 960,840" fill="url(#coolC)" opacity="0.4"/>
+</svg>

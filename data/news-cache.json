@@ -1,0 +1,189 @@
+{
+  "feed": {
+    "title": "AeroCMS",
+    "link": "https://aerocms.net/",
+    "generated_at": "2026-05-21T07:36:58.533Z"
+  },
+  "items": [
+    {
+      "title": "What Is Third-Party Vendor Risk Management?",
+      "slug": "what-is-third-party-vendor-risk-management-dallas-tx",
+      "link": "https://aerocms.net/what-is-third-party-vendor-risk-management-dallas-tx/",
+      "externalLink": "https://aerocms.net/what-is-third-party-vendor-risk-management-dallas-tx/",
+      "isExternal": true,
+      "pubDate": "2026-05-20T14:10:48.000Z",
+      "author": "Webmaster",
+      "categories": [
+        "Business Security",
+        "Cybersecurity",
+        "third-party vendor risk"
+      ],
+      "primaryCategory": "Cybersecurity",
+      "excerpt": "Third-party vendor risk management is the process of identifying, assessing, and reducing risks caused by external service providers that your business depends on. Software and service providers are integral elements of…",
+      "readMinutes": 3
+    },
+    {
+      "title": "Why Are SaaS Sprawl Risks Costing Your Business More?",
+      "slug": "why-are-saas-sprawl-risks-costing-your-business-more-dallas-tx",
+      "link": "articles/why-are-saas-sprawl-risks-costing-your-business-more-dallas-tx.html",
+      "externalLink": "https://aerocms.net/why-are-saas-sprawl-risks-costing-your-business-more-dallas-tx/",
+      "isExternal": false,
+      "pubDate": "2026-05-13T18:26:57.000Z",
+      "author": "Webmaster",
+      "categories": [
+        "Business Security",
+        "Cybersecurity",
+        "Saas sprawl risks",
+        "Technology"
+      ],
+      "primaryCategory": "Cybersecurity",
+      "excerpt": "Software as a Service, better known as SaaS, has become an indispensable tool for many businesses in Dallas, and understandably so. After all, these apps are the ultimate godsend—reducing costs, elevating efficiency,…",
+      "readMinutes": 4
+    },
+    {
+      "title": "How Does SaaS Vendor Risk Management Reduce SaaS Sprawl?",
+      "slug": "how-does-saas-vendor-risk-management-reduce-saas-sprawl-dallas-tx",
+      "link": "articles/how-does-saas-vendor-risk-management-reduce-saas-sprawl-dallas-tx.html",
+      "externalLink": "https://aerocms.net/how-does-saas-vendor-risk-management-reduce-saas-sprawl-dallas-tx/",
+      "isExternal": false,
+      "pubDate": "2026-05-06T16:31:37.000Z",
+      "author": "Webmaster",
+      "categories": [
+        "Business Security",
+        "Cybersecurity",
+        "Saas Sprawl"
+      ],
+      "primaryCategory": "Cybersecurity",
+      "excerpt": "Not long ago, getting a new business tool meant weeks of demos, contracts, and budget approvals. Today, teams can adopt new software in minutes—often without centralized oversight. With an app for…",
+      "readMinutes": 7
+    },
+    {
+      "title": "What Are the Real Risks of Aging Technology?",
+      "slug": "what-are-the-real-risks-of-aging-technology-dallas-tx",
+      "link": "articles/what-are-the-real-risks-of-aging-technology-dallas-tx.html",
+      "externalLink": "https://aerocms.net/what-are-the-real-risks-of-aging-technology-dallas-tx/",
+      "isExternal": false,
+      "pubDate": "2026-04-22T14:06:12.000Z",
+      "author": "Webmaster",
+      "categories": [
+        "Business Security",
+        "Cybersecurity",
+        "Aging technology",
+        "Technology"
+      ],
+      "primaryCategory": "Cybersecurity",
+      "excerpt": "It’s very easy to spot outdated technology, at least. That’s what many Dallas businesses think. The truth is, they get noticed only when the signs are already obvious. An old operating system that’s been there for…",
+      "readMinutes": 4
+    },
+    {
+      "title": "Is Windows 10 End of Life a Security Risk for Your Business?",
+      "slug": "is-windows-10-end-of-life-a-security-risk-for-your-business-dallas-tx",
+      "link": "articles/is-windows-10-end-of-life-a-security-risk-for-your-business-dallas-tx.html",
+      "externalLink": "https://aerocms.net/is-windows-10-end-of-life-a-security-risk-for-your-business-dallas-tx/",
+      "isExternal": false,
+      "pubDate": "2026-04-15T12:44:49.000Z",
+      "author": "Webmaster",
+      "categories": [
+        "Business Security",
+        "Cybersecurity",
+        "Technology"
+      ],
+      "primaryCategory": "Cybersecurity",
+      "excerpt": "So Windows 10 has reached end of life. For many businesses in Dallas, the Windows 10 end of life conversation was a very short and straightforward one. Devices needed upgrades. IT teams planned migrations, and the…",
+      "readMinutes": 4
+    },
+    {
+      "title": "Aging Technology and Business Continuity: How Do You Prepare for Change Without Chaos?",
+      "slug": "aging-technology-and-business-continuity-how-do-you-prepare-for-change-without-chaos-dallas-tx",
+      "link": "articles/aging-technology-and-business-continuity-how-do-you-prepare-for-change-without-chaos-dallas-tx.html",
+      "externalLink": "https://aerocms.net/aging-technology-and-business-continuity-how-do-you-prepare-for-change-without-chaos-dallas-tx/",
+      "isExternal": false,
+      "pubDate": "2026-04-08T16:46:50.000Z",
+      "author": "Webmaster",
+      "categories": [
+        "Business Security",
+        "Aging technology",
+        "Business Risks",
+        "Technology"
+      ],
+      "primaryCategory": "Technology",
+      "excerpt": "Technology will always change, whether we like it or not. That’s just how it goes—aging technology becomes outdated, hardware wears down, software reaches the end of its life, and vendors move in different directions or…",
+      "readMinutes": 8
+    },
+    {
+      "title": "How Can Businesses Follow PCI DSS 4.0 With a Simplified Survival Guide?",
+      "slug": "how-can-businesses-follow-pci-dss-4-0-with-a-simplified-survival-guide-dallas-tx",
+      "link": "articles/how-can-businesses-follow-pci-dss-4-0-with-a-simplified-survival-guide-dallas-tx.html",
+      "externalLink": "https://aerocms.net/how-can-businesses-follow-pci-dss-4-0-with-a-simplified-survival-guide-dallas-tx/",
+      "isExternal": false,
+      "pubDate": "2026-03-18T14:16:47.000Z",
+      "author": "Webmaster",
+      "categories": [
+        "Business Security",
+        "Cybersecurity",
+        "Business",
+        "PCI compliance",
+        "Technology"
+      ],
+      "primaryCategory": "Cybersecurity",
+      "excerpt": "Trying to understand PCI DSS 4.0 is a bit like being handed a 300-page rulebook and told your business depends on getting it right. Most leaders take one look and think, “I’ll deal with this later.” But that “later” has…",
+      "readMinutes": 3
+    },
+    {
+      "title": "What PCI Compliance Fines Can Businesses Face (and How Do You Avoid Them)?",
+      "slug": "what-pci-compliance-fines-can-businesses-face-and-how-do-you-avoid-them-dallas-tx",
+      "link": "https://aerocms.net/what-pci-compliance-fines-can-businesses-face-and-how-do-you-avoid-them-dallas-tx/",
+      "externalLink": "https://aerocms.net/what-pci-compliance-fines-can-businesses-face-and-how-do-you-avoid-them-dallas-tx/",
+      "isExternal": true,
+      "pubDate": "2026-03-11T10:32:34.000Z",
+      "author": "Webmaster",
+      "categories": [
+        "Business Security",
+        "Cybersecurity",
+        "PCI compliance",
+        "PCI compliance fines",
+        "Technology"
+      ],
+      "primaryCategory": "Cybersecurity",
+      "excerpt": "Ignoring PCI compliance is like leaving your cash register unlocked after closing your store. You’re not just taking a risk—you’re practically inviting trouble. Most business owners are convinced they are too small to…",
+      "readMinutes": 3
+    },
+    {
+      "title": "What Are the New Credit Card Security Rules Business Leaders and Professionals Must Follow?",
+      "slug": "what-are-the-new-credit-card-security-rules-business-leaders-and-professionals-must-follow-dallas-tx",
+      "link": "https://aerocms.net/what-are-the-new-credit-card-security-rules-business-leaders-and-professionals-must-follow-dallas-tx/",
+      "externalLink": "https://aerocms.net/what-are-the-new-credit-card-security-rules-business-leaders-and-professionals-must-follow-dallas-tx/",
+      "isExternal": true,
+      "pubDate": "2026-03-04T16:20:39.000Z",
+      "author": "Webmaster",
+      "categories": [
+        "Business Security",
+        "Cybersecurity",
+        "Credit Card",
+        "Credit Card Security"
+      ],
+      "primaryCategory": "Cybersecurity",
+      "excerpt": "Running your payment systems on outdated security protocols is like locking your front door but leaving your safe wide open… anyone who knows where to look will be able to walk right in. Today, we will talk about the…",
+      "readMinutes": 3
+    },
+    {
+      "title": "How Can Business Leaders and Professionals Control IT Spending Without Compromising Security?",
+      "slug": "how-can-business-leaders-and-professionals-control-it-spending-without-compromising-security-dallas-tx",
+      "link": "https://aerocms.net/how-can-business-leaders-and-professionals-control-it-spending-without-compromising-security-dallas-tx/",
+      "externalLink": "https://aerocms.net/how-can-business-leaders-and-professionals-control-it-spending-without-compromising-security-dallas-tx/",
+      "isExternal": true,
+      "pubDate": "2026-02-18T16:33:17.000Z",
+      "author": "Webmaster",
+      "categories": [
+        "Business Security",
+        "Cybersecurity",
+        "Business",
+        "Control IT Spending",
+        "Technology"
+      ],
+      "primaryCategory": "Cybersecurity",
+      "excerpt": "Running a business with no control over IT spending is a bit like driving a luxury car that has a slow fuel leak. You’re constantly refilling the tank but are never quite sure where all that expensive gas is…",
+      "readMinutes": 6
+    }
+  ]
+}

@@ -54,115 +54,31 @@
   </div>
 </section>
 
-<!-- Featured + Grid -->
+<!-- Stream meta bar -->
+<div class="container" style="padding-top: 24px;">
+  <div id="news-meta" class="news-meta-bar" aria-live="polite">
+    <span class="news-meta-bar__dot" aria-hidden="true"></span>
+    <span class="news-meta-bar__label">Loading feed&hellip;</span>
+  </div>
+</div>
+
+<!-- News stream (rendered by JS from data/news-cache.json) -->
 <section class="content-section">
   <div class="container">
-    <!-- Featured (newest) -->
-    <article class="news-featured">
-      <div class="news-featured__media">
-        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1400&q=80&auto=format&fit=crop" alt="Featured article" />
-      </div>
-      <div class="news-featured__body">
-        <span class="news-featured__tag">Featured &middot; May 14, 2026</span>
-        <h2><a href="articles/why-are-saas-sprawl-risks-costing-your-business-more-dallas-tx.html" style="color: inherit; text-decoration: none;">Why Are SaaS Sprawl Risks Costing Your Business More?</a></h2>
-        <p>Most businesses don't realize how many SaaS apps their team has signed into until the invoices start surprising them. Sprawl isn't just a cost problem &mdash; it's a security one. Here's how to audit it without nuking productivity.</p>
-        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px; font-size: 13px; color: var(--ink-500);">
-          <span>5 min read</span>
-          <span style="color: var(--ink-300);">&bull;</span>
-          <span>Business Security</span>
-        </div>
-        <a href="articles/why-are-saas-sprawl-risks-costing-your-business-more-dallas-tx.html" class="btn btn--primary">Read the post &rarr;</a>
-      </div>
-    </article>
-
-    <!-- Grid (sorted newest -> oldest) -->
-    <div class="news-grid">
-      <a href="articles/how-does-saas-vendor-risk-management-reduce-saas-sprawl-dallas-tx.html" class="news-card">
-        <div class="news-card__media">
-          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80&auto=format&fit=crop" alt="" />
-        </div>
-        <div class="news-card__body">
-          <span class="news-card__tag">Business Security</span>
-          <h3>How Does SaaS Vendor Risk Management Reduce SaaS Sprawl?</h3>
-          <p>The discipline most growing teams skip &mdash; until a vendor breach forces the conversation. A vendor risk framework you can actually run.</p>
-          <div class="news-card__meta">
-            <span>5 min read</span>
-            <span>Apr 28, 2026</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="articles/what-are-the-real-risks-of-aging-technology-dallas-tx.html" class="news-card">
-        <div class="news-card__media">
-          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80&auto=format&fit=crop" alt="" />
-        </div>
-        <div class="news-card__body">
-          <span class="news-card__tag">Hardware</span>
-          <h3>What Are the Real Risks of Aging Technology?</h3>
-          <p>Hardware doesn't just get slower &mdash; it gets less secure. The actual operational cost of stretching one more year out of that 2019 fleet refresh.</p>
-          <div class="news-card__meta">
-            <span>6 min read</span>
-            <span>Apr 10, 2026</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="articles/is-windows-10-end-of-life-a-security-risk-for-your-business-dallas-tx.html" class="news-card">
-        <div class="news-card__media">
-          <img src="https://images.unsplash.com/photo-1633419461186-7d40a38105ec?w=900&q=80&auto=format&fit=crop" alt="" />
-        </div>
-        <div class="news-card__body">
-          <span class="news-card__tag">Cybersecurity</span>
-          <h3>Is Windows 10 End of Life a Security Risk for Your Business?</h3>
-          <p>Yes &mdash; and the path to upgrade has more failure modes than most teams realize. The migration checklist Microsoft won't hand you.</p>
-          <div class="news-card__meta">
-            <span>7 min read</span>
-            <span>Mar 22, 2026</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="articles/aging-technology-and-business-continuity-how-do-you-prepare-for-change-without-chaos-dallas-tx.html" class="news-card">
-        <div class="news-card__media">
-          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=900&q=80&auto=format&fit=crop" alt="" />
-        </div>
-        <div class="news-card__body">
-          <span class="news-card__tag">Tech Support</span>
-          <h3>Aging Technology &amp; Business Continuity: Preparing for Change Without Chaos</h3>
-          <p>How to plan a multi-year hardware refresh that doesn't blow up your operations &mdash; and the OpEx-vs-CapEx framing that usually wins the budget conversation.</p>
-          <div class="news-card__meta">
-            <span>8 min read</span>
-            <span>Mar 5, 2026</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="articles/how-can-businesses-follow-pci-dss-4-0-with-a-simplified-survival-guide-dallas-tx.html" class="news-card">
-        <div class="news-card__media">
-          <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=900&q=80&auto=format&fit=crop" alt="" />
-        </div>
-        <div class="news-card__body">
-          <span class="news-card__tag">Cybersecurity</span>
-          <h3>How Can Businesses Follow PCI DSS 4.0 With a Simplified Survival Guide?</h3>
-          <p>The new requirements, the deadlines, and the controls most businesses don't have yet. With a checklist you can use this quarter.</p>
-          <div class="news-card__meta">
-            <span>9 min read</span>
-            <span>Feb 18, 2026</span>
-          </div>
-        </div>
-      </a>
-
-    </div>
-
-    <!-- Pagination -->
-    <div style="text-align: center; margin-top: 64px;">
-      <span style="display: inline-block; color: var(--ink-300); font-size: 14px; margin-right: 16px;">Newest first</span>
-      <a href="#" class="btn btn--ghost">Older Entries &raquo;</a>
-      <span style="display: inline-block; margin: 0 16px; color: var(--ink-500); font-size: 14px;">Page 1 of 10</span>
-      <a href="#" class="btn btn--ghost" style="opacity:.4; pointer-events:none;">&laquo; Newer Entries</a>
-    </div>
+    <div id="news-stream"></div>
   </div>
 </section>
+
+<noscript>
+  <section class="content-section">
+    <div class="container">
+      <p style="text-align: center; padding: 32px; background: rgba(255,255,255,.7); border: 1px solid var(--border); border-radius: var(--radius);">
+        This stream is rendered client-side from <a href="https://aerocms.net/feed/" target="_blank" rel="noopener noreferrer">aerocms.net/feed/</a>.
+        Enable JavaScript to load the latest posts, or visit <a href="https://aerocms.net/news/" target="_blank" rel="noopener noreferrer">aerocms.net/news</a> directly.
+      </p>
+    </div>
+  </section>
+</noscript>
 
 <!-- Categories / Subscribe band -->
 <section class="content-section content-section--soft">
@@ -249,6 +165,7 @@
 </footer>
 
 <script>
+  // Nav menu
   const menuBtn = document.getElementById('menuToggle');
   const nav = document.querySelector('.site-nav');
   menuBtn.addEventListener('click', () => {
@@ -259,6 +176,172 @@
     nav.classList.remove('site-nav--open');
     menuBtn.setAttribute('aria-expanded', 'false');
   }));
+
+  // News stream: load cache + images, render featured + grid.
+  // Optional: also attempt a live RSS refresh through rss2json.com.
+  (async function loadNewsStream() {
+    const stream = document.getElementById('news-stream');
+    const meta = document.getElementById('news-meta');
+    function setMeta(label, kind) {
+      meta.classList.remove('news-meta-bar--live', 'news-meta-bar--cache', 'news-meta-bar--error');
+      if (kind) meta.classList.add('news-meta-bar--' + kind);
+      meta.querySelector('.news-meta-bar__label').textContent = label;
+    }
+    function fmtDate(iso) {
+      const d = new Date(iso);
+      return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+    }
+    function fmtRelative(iso) {
+      const d = new Date(iso);
+      const diffMs = Date.now() - d.getTime();
+      const mins = Math.floor(diffMs / 60000);
+      if (mins < 60) return mins + 'm ago';
+      const hrs = Math.floor(mins / 60);
+      if (hrs < 48) return hrs + 'h ago';
+      const days = Math.floor(hrs / 24);
+      if (days < 30) return days + 'd ago';
+      return fmtDate(iso);
+    }
+    function escapeHtml(s) {
+      return (s || '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    }
+
+    const [cacheRes, imgRes] = await Promise.all([
+      fetch('data/news-cache.json').catch(() => null),
+      fetch('data/news-stock-images.json').catch(() => null),
+    ]);
+    if (!cacheRes || !cacheRes.ok || !imgRes || !imgRes.ok) {
+      setMeta('Couldn\'t load the feed cache. Visit aerocms.net/news.', 'error');
+      stream.innerHTML = '<p style="text-align:center;color:var(--ink-500);padding:32px;">Feed cache unavailable. <a href="https://aerocms.net/news/" target="_blank" rel="noopener noreferrer">View posts at aerocms.net &rarr;</a></p>';
+      return;
+    }
+    const cache = await cacheRes.json();
+    const stock = await imgRes.json();
+
+    function pickImage(item) {
+      // Match by category -> topics -> image. Otherwise random.
+      const topics = new Set();
+      for (const cat of item.categories || []) {
+        const mapped = stock.category_topic_map[cat];
+        if (mapped) mapped.forEach((t) => topics.add(t));
+      }
+      // Also try matching by keywords in title
+      const titleLow = (item.title || '').toLowerCase();
+      ['saas','cloud','security','windows','hardware','aging','pci','phishing','vendor','code']
+        .forEach((kw) => { if (titleLow.includes(kw)) topics.add(kw); });
+
+      // Score each image by topic overlap
+      const scored = stock.images.map((img) => {
+        const overlap = img.topics.filter((t) => topics.has(t)).length;
+        return { img, score: overlap };
+      });
+      scored.sort((a, b) => b.score - a.score);
+      const top = scored.filter((s) => s.score > 0);
+      const pool = top.length ? top : scored;
+      // Deterministic pick using the slug as seed so the image stays stable per article
+      const seed = (item.slug || item.title || 'x').split('').reduce((a, c) => a + c.charCodeAt(0), 0);
+      return pool[seed % pool.length].img;
+    }
+
+    function imgUrl(id, w) {
+      return `https://images.unsplash.com/photo-${id}?w=${w}&q=80&auto=format&fit=crop`;
+    }
+
+    function renderCard(item, featured) {
+      const img = pickImage(item);
+      const cat = item.primaryCategory || (item.categories || [])[0] || '';
+      const externalAttrs = item.isExternal ? ' target="_blank" rel="noopener noreferrer"' : '';
+      const externalChip = item.isExternal
+        ? ' <span class="news-card__external" title="Opens on aerocms.net" aria-label="External link">&#x2197;</span>'
+        : '';
+
+      if (featured) {
+        return `<article class="news-featured">
+          <div class="news-featured__media">
+            <img src="${imgUrl(img.id, 1400)}" alt="${escapeHtml(img.alt)}" data-photographer="${escapeHtml(img.photographer)}" />
+          </div>
+          <div class="news-featured__body">
+            <span class="news-featured__tag">Featured &middot; ${fmtDate(item.pubDate)}</span>
+            <h2><a href="${item.link}"${externalAttrs} style="color: inherit; text-decoration: none;">${escapeHtml(item.title)}${externalChip}</a></h2>
+            <p>${escapeHtml(item.excerpt)}</p>
+            <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px; font-size: 13px; color: var(--ink-500);">
+              <span>${item.readMinutes} min read</span>
+              <span style="color: var(--ink-300);">&bull;</span>
+              <span>${escapeHtml(cat)}</span>
+            </div>
+            <a href="${item.link}"${externalAttrs} class="btn btn--primary">Read the post &rarr;</a>
+          </div>
+        </article>`;
+      }
+      return `<a href="${item.link}"${externalAttrs} class="news-card${item.isExternal ? ' news-card--external' : ''}">
+        <div class="news-card__media">
+          <img src="${imgUrl(img.id, 900)}" alt="" data-photographer="${escapeHtml(img.photographer)}" />
+        </div>
+        <div class="news-card__body">
+          <span class="news-card__tag">${escapeHtml(cat)}</span>
+          <h3>${escapeHtml(item.title)}${externalChip}</h3>
+          <p>${escapeHtml(item.excerpt)}</p>
+          <div class="news-card__meta">
+            <span>${item.readMinutes} min read</span>
+            <span>${fmtDate(item.pubDate)}</span>
+          </div>
+        </div>
+      </a>`;
+    }
+
+    function render(items, source) {
+      if (!items || !items.length) {
+        stream.innerHTML = '<p style="text-align:center;color:var(--ink-500);padding:32px;">No posts yet.</p>';
+        return;
+      }
+      const [featured, ...rest] = items;
+      stream.innerHTML = `
+        ${renderCard(featured, true)}
+        <div class="news-grid">
+          ${rest.slice(0, 9).map((i) => renderCard(i, false)).join('')}
+        </div>
+      `;
+      const label = source === 'live'
+        ? `Live from aerocms.net/feed &middot; ${items.length} posts`
+        : `Cached ${fmtRelative(cache.feed.generated_at)} &middot; ${items.length} posts`;
+      setMeta(label.replace(/&middot;/g, '·'), source);
+    }
+
+    // Initial render from cache
+    render(cache.items, 'cache');
+
+    // Try a live refresh through rss2json.com (no API key needed, public endpoint)
+    try {
+      const live = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Faerocms.net%2Ffeed%2F');
+      if (live.ok) {
+        const json = await live.json();
+        if (json.status === 'ok' && Array.isArray(json.items) && json.items.length) {
+          const localSlugs = new Set(cache.items.filter((i) => !i.isExternal).map((i) => i.slug));
+          const items = json.items.map((it) => {
+            const slugMatch = (it.link || '').match(/aerocms\.net\/([^/?#]+)\/?/);
+            const slug = slugMatch ? slugMatch[1] : null;
+            const isExternal = !slug || !localSlugs.has(slug);
+            return {
+              title: it.title,
+              slug,
+              link: isExternal ? it.link : `articles/${slug}.html`,
+              externalLink: it.link,
+              isExternal,
+              pubDate: it.pubDate,
+              author: it.author,
+              categories: it.categories || [],
+              primaryCategory: (it.categories || [])[0] || 'AeroCMS',
+              excerpt: (it.description || '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim().slice(0, 220),
+              readMinutes: Math.max(2, Math.round(((it.content || it.description || '').replace(/<[^>]+>/g, '').split(/\s+/).length) / 220)),
+            };
+          });
+          render(items, 'live');
+        }
+      }
+    } catch (_) {
+      /* keep the cached render */
+    }
+  })();
 </script>
 
 </body>

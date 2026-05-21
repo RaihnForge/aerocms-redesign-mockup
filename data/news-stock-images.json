@@ -1,0 +1,129 @@
+{
+  "_meta": {
+    "source": "Unsplash",
+    "license": "Unsplash license (free to use, commercial OK, no attribution required but provided for credit)",
+    "license_url": "https://unsplash.com/license",
+    "notes": "Images are referenced by CDN URL. The site shows credits in the page footer + per-card hover via data-photographer attribute. To add an image: include id, photographer name, and topics (used for keyword matching from article categories/title)."
+  },
+  "images": [
+    {
+      "id": "1451187580459-43490279c0fa",
+      "alt": "Stack of server hard drives lit blue",
+      "photographer": "Taylor Vick",
+      "profile_url": "https://unsplash.com/@tvick",
+      "topics": ["security", "infrastructure", "hardware", "cloud", "server"]
+    },
+    {
+      "id": "1518770660439-4636190af475",
+      "alt": "Macro of a green circuit board",
+      "photographer": "Alexandre Debiève",
+      "profile_url": "https://unsplash.com/@alexkixa",
+      "topics": ["hardware", "tech", "aging-tech"]
+    },
+    {
+      "id": "1563013544-824ae1b704d3",
+      "alt": "Padlock on a digital circuit",
+      "photographer": "FLY:D",
+      "profile_url": "https://unsplash.com/@flyd2069",
+      "topics": ["security", "cybersecurity", "compliance", "pci", "phishing"]
+    },
+    {
+      "id": "1521737604893-d14cc237f11d",
+      "alt": "Team in a meeting around a laptop",
+      "photographer": "Annie Spratt",
+      "profile_url": "https://unsplash.com/@anniespratt",
+      "topics": ["business", "consulting", "tech-support", "meeting"]
+    },
+    {
+      "id": "1486312338219-ce68d2c6f44d",
+      "alt": "Laptop with code on screen",
+      "photographer": "Christopher Gower",
+      "profile_url": "https://unsplash.com/@cgower",
+      "topics": ["dev", "code", "tech", "saas"]
+    },
+    {
+      "id": "1551434678-e076c223a692",
+      "alt": "Server rack closeup with blue glow",
+      "photographer": "Joshua Sortino",
+      "profile_url": "https://unsplash.com/@sortino",
+      "topics": ["security", "infrastructure", "server", "cloud"]
+    },
+    {
+      "id": "1551288049-bebda4e38f71",
+      "alt": "Laptop showing analytics charts",
+      "photographer": "Carlos Muza",
+      "profile_url": "https://unsplash.com/@kmuza",
+      "topics": ["business", "saas", "analytics", "vendor", "spend"]
+    },
+    {
+      "id": "1544197150-b99a580bb7a8",
+      "alt": "Server room with neon light streaks",
+      "photographer": "Massimo Botturi",
+      "profile_url": "https://unsplash.com/@massimobotturi",
+      "topics": ["cloud", "infrastructure", "server"]
+    },
+    {
+      "id": "1558494949-ef010cbdcc31",
+      "alt": "Data center with rack lighting",
+      "photographer": "Taylor Vick",
+      "profile_url": "https://unsplash.com/@tvick",
+      "topics": ["cloud", "infrastructure", "server", "saas"]
+    },
+    {
+      "id": "1633419461186-7d40a38105ec",
+      "alt": "Windows laptop on a desk",
+      "photographer": "Windows",
+      "profile_url": "https://unsplash.com/@windows",
+      "topics": ["hardware", "windows", "operating-system", "aging-tech"]
+    },
+    {
+      "id": "1593642632559-0c6d3fc62b89",
+      "alt": "Modern workstation with monitor",
+      "photographer": "Domenico Loia",
+      "profile_url": "https://unsplash.com/@domenicoloia",
+      "topics": ["hardware", "workstation", "office"]
+    },
+    {
+      "id": "1497366216548-37526070297c",
+      "alt": "Office desk with notebook and laptop",
+      "photographer": "Annie Spratt",
+      "profile_url": "https://unsplash.com/@anniespratt",
+      "topics": ["business", "office", "consulting"]
+    },
+    {
+      "id": "1556761175-b413da4baf72",
+      "alt": "Strategy session at a wooden table",
+      "photographer": "Headway",
+      "profile_url": "https://unsplash.com/@headwayio",
+      "topics": ["consulting", "meeting", "business"]
+    },
+    {
+      "id": "1522071820081-009f0129c71c",
+      "alt": "Diverse team in collaboration",
+      "photographer": "Annie Spratt",
+      "profile_url": "https://unsplash.com/@anniespratt",
+      "topics": ["business", "team", "consulting"]
+    },
+    {
+      "id": "1521791136064-7986c2920216",
+      "alt": "Two people shaking hands across a desk",
+      "photographer": "Sebastian Herrmann",
+      "profile_url": "https://unsplash.com/@officestock",
+      "topics": ["business", "vendor", "consulting", "partnership"]
+    },
+    {
+      "id": "1517694712202-14dd9538aa97",
+      "alt": "Multiple lines of code on screen",
+      "photographer": "Clément Hélardot",
+      "profile_url": "https://unsplash.com/@clemhlrdt",
+      "topics": ["dev", "code", "tech", "saas"]
+    }
+  ],
+  "category_topic_map": {
+    "Business Security": ["security", "compliance"],
+    "Cybersecurity": ["cybersecurity", "security", "phishing"],
+    "Hardware": ["hardware", "aging-tech", "workstation"],
+    "Tech Support": ["tech-support", "consulting", "office"],
+    "Cloud": ["cloud", "infrastructure", "saas"]
+  }
+}

@@ -55,24 +55,31 @@
   </div>
 </section>
 
-<!-- Filter tabs (decorative for now) -->
-<section style="padding: 40px 0; background: #fff; border-bottom: 1px solid var(--border); position: sticky; top: 76px; z-index: 50;">
+<!-- Filter tabs -->
+<section style="padding: 32px 0; background: rgba(255, 255, 255, 0.65); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); position: sticky; top: 76px; z-index: 50;">
   <div class="container">
-    <div class="resource-tabs">
-      <a href="#tools" class="resource-tab resource-tab--active">All Resources</a>
-      <a href="#tools" class="resource-tab">Tools &amp; Calculators</a>
-      <a href="#guides" class="resource-tab">Guides &amp; Checklists</a>
-      <a href="#webinars" class="resource-tab">Webinars</a>
-      <a href="#infographics" class="resource-tab">Infographics</a>
-      <a href="#ebooks" class="resource-tab">eBooks</a>
+    <div class="resource-filter">
+      <div class="resource-filter__label" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+        <span>Filter</span>
+      </div>
+      <div class="resource-tabs" role="tablist">
+        <button type="button" class="resource-tab resource-tab--active" data-filter="all">All Resources <span class="resource-tab__count">29</span></button>
+        <button type="button" class="resource-tab" data-filter="tools">Tools &amp; Calculators <span class="resource-tab__count">6</span></button>
+        <button type="button" class="resource-tab" data-filter="guides">Guides &amp; Checklists <span class="resource-tab__count">8</span></button>
+        <button type="button" class="resource-tab" data-filter="webinars">Webinars <span class="resource-tab__count">4</span></button>
+        <button type="button" class="resource-tab" data-filter="infographics">Infographics <span class="resource-tab__count">6</span></button>
+        <button type="button" class="resource-tab" data-filter="ebooks">eBooks <span class="resource-tab__count">3</span></button>
+        <button type="button" class="resource-tab" data-filter="training">Training <span class="resource-tab__count">1</span></button>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- Tools & Calculators -->
-<section class="content-section" id="tools">
+<section class="content-section">
   <div class="container">
-    <div class="resource-section">
+    <div class="resource-section" data-category="tools" id="tools">
       <div class="resource-section__head">
         <h2>Tools &amp; Calculators</h2>
         <span class="resource-section__count">6 items</span>
@@ -118,7 +125,7 @@
     </div>
 
     <!-- Guides & Checklists -->
-    <div class="resource-section" id="guides">
+    <div class="resource-section" data-category="guides" id="guides">
       <div class="resource-section__head">
         <h2>Guides, Templates &amp; Checklists</h2>
         <span class="resource-section__count">8 items</span>
@@ -176,7 +183,7 @@
     </div>
 
     <!-- Webinars -->
-    <div class="resource-section" id="webinars">
+    <div class="resource-section" data-category="webinars" id="webinars">
       <div class="resource-section__head">
         <h2>Webinars</h2>
         <span class="resource-section__count">4 items</span>
@@ -210,7 +217,7 @@
     </div>
 
     <!-- Infographics -->
-    <div class="resource-section" id="infographics">
+    <div class="resource-section" data-category="infographics" id="infographics">
       <div class="resource-section__head">
         <h2>Infographics</h2>
         <span class="resource-section__count">6 items</span>
@@ -256,7 +263,7 @@
     </div>
 
     <!-- eBooks -->
-    <div class="resource-section" id="ebooks">
+    <div class="resource-section" data-category="ebooks" id="ebooks">
       <div class="resource-section__head">
         <h2>eBooks &amp; Long-form</h2>
         <span class="resource-section__count">3 items</span>
@@ -284,7 +291,7 @@
     </div>
 
     <!-- Quiz -->
-    <div class="resource-section">
+    <div class="resource-section" data-category="training" id="training">
       <div class="resource-section__head">
         <h2>Training &amp; Assessment</h2>
         <span class="resource-section__count">1 item</span>
@@ -375,6 +382,20 @@
     nav.classList.remove('site-nav--open');
     menuBtn.setAttribute('aria-expanded', 'false');
   }));
+
+  // Resource category filter
+  const tabs = document.querySelectorAll('.resource-tab');
+  const sections = document.querySelectorAll('.resource-section[data-category]');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const filter = tab.dataset.filter;
+      tabs.forEach(t => t.classList.toggle('resource-tab--active', t === tab));
+      sections.forEach(s => {
+        const show = (filter === 'all') || (s.dataset.category === filter);
+        s.style.display = show ? '' : 'none';
+      });
+    });
+  });
 </script>
 
 </body>
