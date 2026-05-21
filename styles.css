@@ -1225,11 +1225,7 @@ h1, h2, h3, h4, h5 {
   text-align: center;
   position: relative;
   z-index: 1;
-  animation: process-step-lift 6s ease-in-out infinite;
 }
-.process-step:nth-child(1) { animation-delay: 0s; }
-.process-step:nth-child(2) { animation-delay: 2s; }
-.process-step:nth-child(3) { animation-delay: 4s; }
 
 .process-step__num {
   width: 72px;
@@ -1245,11 +1241,20 @@ h1, h2, h3, h4, h5 {
   align-items: center;
   justify-content: center;
   box-shadow: var(--shadow-md);
-  animation: process-step-pulse 6s ease-in-out infinite;
+  animation: process-step-pulse 12s ease-in-out infinite;
 }
 .process-step:nth-child(1) .process-step__num { animation-delay: 0s; }
-.process-step:nth-child(2) .process-step__num { animation-delay: 2s; }
-.process-step:nth-child(3) .process-step__num { animation-delay: 4s; }
+.process-step:nth-child(2) .process-step__num { animation-delay: 4s; }
+.process-step:nth-child(3) .process-step__num { animation-delay: 8s; }
+
+/* Title color fades to teal during its step's active beat -- text size and
+   position stay fixed; only the color shifts. */
+.process-step h3 {
+  animation: process-step-title 12s ease-in-out infinite;
+}
+.process-step:nth-child(1) h3 { animation-delay: 0s; }
+.process-step:nth-child(2) h3 { animation-delay: 4s; }
+.process-step:nth-child(3) h3 { animation-delay: 8s; }
 
 @keyframes process-step-pulse {
   0%, 100% {
@@ -1269,15 +1274,15 @@ h1, h2, h3, h4, h5 {
     box-shadow: var(--shadow-md);
   }
 }
-@keyframes process-step-lift {
-  0%, 100% { transform: translateY(0); }
-  4%, 30%  { transform: translateY(-6px); }
-  34%      { transform: translateY(0); }
+@keyframes process-step-title {
+  0%, 100% { color: var(--ink-900); }
+  6%, 28%  { color: var(--teal-600); }
+  34%      { color: var(--ink-900); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .process-step,
-  .process-step__num { animation: none; }
+  .process-step__num,
+  .process-step h3 { animation: none; }
 }
 .process-step h3 {
   font-size: 20px;
