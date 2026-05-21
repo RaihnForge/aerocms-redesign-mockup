@@ -13,10 +13,14 @@
 <style>
   .contact-layout {
     display: grid;
-    grid-template-columns: 1.4fr 1fr;
-    gap: 64px;
+    grid-template-columns: 260px 1fr 260px;
+    grid-template-areas: "rep form side";
+    gap: 32px;
     align-items: start;
   }
+  .contact-rep    { grid-area: rep; }
+  .contact-form-box { grid-area: form; }
+  .contact-side   { grid-area: side; }
   .contact-form-box {
     background: #fff;
     border: 1px solid var(--border);
@@ -26,45 +30,61 @@
   }
   .contact-form-box h2 { font-size: 28px; margin-bottom: 8px; }
   .contact-form-box > p { color: var(--ink-500); margin-bottom: 28px; }
-  .contact-form-rep {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 28px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid var(--border);
+
+  /* Josh personal-rep card */
+  .contact-rep {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 28px 24px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 100px;
   }
-  .contact-form-rep__avatar {
-    width: 84px;
-    height: 84px;
+  .contact-rep__avatar {
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     object-fit: cover;
-    flex-shrink: 0;
-    box-shadow: 0 4px 14px rgba(15, 42, 51, .14);
+    margin: 0 auto 16px;
+    display: block;
+    box-shadow: 0 6px 18px rgba(15, 42, 51, .14);
   }
-  .contact-form-rep__copy { flex: 1; min-width: 0; }
-  .contact-form-rep__heading {
-    font-size: 22px;
+  .contact-rep__name {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ink-900);
     margin: 0 0 4px;
     line-height: 1.2;
   }
-  .contact-form-rep__byline {
-    font-size: 12px;
+  .contact-rep__role {
+    font-size: 11px;
     font-weight: 600;
     color: var(--teal-700);
-    letter-spacing: .06em;
+    letter-spacing: .1em;
     text-transform: uppercase;
-    margin: 0 0 8px;
+    margin: 0 0 16px;
   }
-  .contact-form-rep__copy p:last-child {
-    margin: 0;
+  .contact-rep__copy {
     font-size: 14px;
     color: var(--ink-500);
-    line-height: 1.5;
+    line-height: 1.55;
+    margin: 0 0 16px;
   }
-  @media (max-width: 540px) {
-    .contact-form-rep { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .contact-rep__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--teal-700);
+    text-decoration: none;
   }
+  .contact-rep__link:hover { color: var(--accent); }
+  .contact-rep__link svg { width: 14px; height: 14px; }
   .contact-form-box label { display: block; margin-bottom: 18px; }
   .contact-form-box label > span {
     display: block;
@@ -146,8 +166,25 @@
     color: #fff;
   }
   .social-button svg { width: 18px; height: 18px; }
-  @media (max-width: 960px) {
-    .contact-layout { grid-template-columns: 1fr; gap: 32px; }
+  @media (max-width: 1100px) {
+    .contact-layout {
+      grid-template-columns: 1fr 240px;
+      grid-template-areas:
+        "rep  side"
+        "form form";
+      gap: 28px;
+    }
+    .contact-rep { position: static; }
+  }
+  @media (max-width: 760px) {
+    .contact-layout {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "form"
+        "rep"
+        "side";
+      gap: 24px;
+    }
     .contact-form-row { grid-template-columns: 1fr; gap: 0; }
     .contact-form-box { padding: 28px; }
   }
@@ -201,17 +238,28 @@
 <section class="content-section">
   <div class="container">
     <div class="contact-layout">
+      <!-- Personal rep card -->
+      <aside class="contact-rep" aria-label="Your point of contact">
+        <img src="assets/team/joshua-keyes.png" alt="Joshua Keyes portrait" class="contact-rep__avatar" />
+        <h2 class="contact-rep__name">Hi, I'm Joshua.</h2>
+        <p class="contact-rep__role">Sales &amp; Onboarding</p>
+        <p class="contact-rep__copy">
+          Usually your first point of contact when something comes in through this form. Drop a line
+          and I'll follow up &mdash; happy to talk through what you're working on.
+        </p>
+        <a href="https://www.linkedin.com/in/joshua-blaine-keyes/" target="_blank" rel="noopener noreferrer" class="contact-rep__link" aria-label="Joshua Keyes on LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          Connect on LinkedIn
+        </a>
+      </aside>
+
       <!-- Form -->
       <div class="contact-form-box">
-        <div class="contact-form-rep">
-          <img src="assets/team/joshua-keyes.png" alt="Joshua Keyes portrait" class="contact-form-rep__avatar" />
-          <div class="contact-form-rep__copy">
-            <h2 class="contact-form-rep__heading">I'll get back to you personally.</h2>
-            <p class="contact-form-rep__byline">Joshua Keyes &middot; Sales &amp; Onboarding</p>
-            <p>Every submission lands in my inbox. I review each one and respond within one business day &mdash; most discovery calls are scheduled within 48 hours.</p>
-          </div>
-        </div>
-        <form onsubmit="event.preventDefault(); document.getElementById('contact-status').textContent='Thanks! We will be in touch within one business day.'; this.style.opacity='0.6';">
+        <h2 style="font-size: 24px; margin-bottom: 8px;">Send us a message.</h2>
+        <p style="color: var(--ink-500); margin-bottom: 28px; font-size: 14px;">
+          Fill out a few details and we'll be in touch.
+        </p>
+        <form onsubmit="event.preventDefault(); document.getElementById('contact-status').textContent='Thanks! We will be in touch soon.'; this.style.opacity='0.6';">
           <div class="contact-form-row">
             <label>
               <span>Name <span style="color: var(--accent);">*</span></span>
