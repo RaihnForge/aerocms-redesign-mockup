@@ -370,7 +370,6 @@ h1, h2, h3, h4, h5 {
 }
 .hero__card span { color: var(--ink-500); }
 .hero__card--1 {
-  top: 8%; left: -4%;
   display: flex; align-items: center; gap: 8px;
   background: var(--teal-900); color: #fff; border-color: transparent;
 }
@@ -382,12 +381,8 @@ h1, h2, h3, h4, h5 {
   animation: pulse 2s ease-in-out infinite;
   flex-shrink: 0;
 }
-.hero__card--2,
-.hero__card--3,
-.hero__card--4 { position: absolute; }
-.hero__card--2 { top: 28%; right: -6%; animation-delay: -2s; }
-.hero__card--3 { bottom: 22%; left: -8%; animation-delay: -4s; }
-.hero__card--4 { bottom: 4%;  right: 4%; animation-delay: -6s; }
+/* Float animation stagger lives on inner cards via inline style now
+   (set by JS so the delay tracks the slot index, not the position). */
 
 /* Small status indicator dot in the corner of cards 2, 3, 4 */
 .hero__card-led {
@@ -413,10 +408,10 @@ h1, h2, h3, h4, h5 {
   background: var(--success);
   box-shadow: 0 0 0 2.5px rgba(43, 191, 122, .25);
 }
-/* Stagger the LED pulses across cards */
-.hero__card--2 .hero__card-led { animation-delay: 0s; }
-.hero__card--3 .hero__card-led { animation-delay: -0.8s; }
-.hero__card--4 .hero__card-led { animation-delay: -1.6s; }
+/* LED pulse stagger via :nth-child of the parent slot wrapper */
+.hero__card-wrap[data-slot="2"] .hero__card-led { animation-delay: 0s; }
+.hero__card-wrap[data-slot="3"] .hero__card-led { animation-delay: -0.8s; }
+.hero__card-wrap[data-slot="4"] .hero__card-led { animation-delay: -1.6s; }
 @keyframes pulse-led {
   0%, 100% { transform: scale(1); opacity: 1; }
   50%      { transform: scale(1.15); opacity: 0.65; }
