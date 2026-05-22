@@ -475,17 +475,29 @@
     // Values intentionally tiny (~15% of an aggressive parallax) so the
     // motion is felt, not seen.
     var depths = [0.0015, 0.003, 0.0042, 0.0055];
+    // Spring-style easing: velocity accelerates toward target (ease-IN
+    // when mouse starts moving), then damping slows it as it approaches
+    // (ease-OUT as it settles). No CSS transition needed -- the physics
+    // itself produces the slow-in / slow-out feel.
     var targetX = 0, targetY = 0;
     var currentX = 0, currentY = 0;
+    var vx = 0, vy = 0;
+    var STIFFNESS = 0.035; // spring pull toward target
+    var DAMPING   = 0.82;  // velocity retention (less = more friction)
     var rafQueued = false;
     function tick() {
-      currentX += (targetX - currentX) * 0.08;
-      currentY += (targetY - currentY) * 0.08;
+      vx = (vx + (targetX - currentX) * STIFFNESS) * DAMPING;
+      vy = (vy + (targetY - currentY) * STIFFNESS) * DAMPING;
+      currentX += vx;
+      currentY += vy;
       allWraps.forEach(function (wrap, i) {
         var d = depths[i] || 0.02;
         wrap.style.transform = 'translate3d(' + (-currentX * d).toFixed(2) + 'px,' + (-currentY * d).toFixed(2) + 'px,0)';
       });
-      if (Math.abs(targetX - currentX) > 0.1 || Math.abs(targetY - currentY) > 0.1) {
+      // Keep ticking while either the spring is still in motion OR the
+      // gap to target is still meaningful.
+      if (Math.abs(vx) > 0.02 || Math.abs(vy) > 0.02 ||
+          Math.abs(targetX - currentX) > 0.5 || Math.abs(targetY - currentY) > 0.5) {
         requestAnimationFrame(tick);
       } else {
         rafQueued = false;
