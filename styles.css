@@ -272,7 +272,7 @@ h1, h2, h3, h4, h5 {
 }
 .hero__inner {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: 1fr 1.15fr;
   gap: 64px;
   align-items: center;
 }
@@ -325,7 +325,7 @@ h1, h2, h3, h4, h5 {
 .hero__visual {
   position: relative;
   aspect-ratio: 4 / 3;
-  max-width: 560px;
+  max-width: 42rem; /* ~672px at default root size; scales with user font-size */
   width: 100%;
   margin-left: auto;
 }
