@@ -695,18 +695,39 @@ h1, h2, h3, h4, h5 {
   gap: 20px;
 }
 .partner-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
   background: rgba(255, 255, 255, 0.70);
   backdrop-filter: blur(6px);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 24px 24px 22px;
-  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  padding: 24px 36px 22px 24px;
+  position: relative;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease, background .2s ease;
 }
 .partner-card:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
   border-color: var(--teal-300);
   background: rgba(255, 255, 255, 0.92);
+}
+.partner-card::after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 14px;
+  height: 14px;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2351626a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'/%3E%3Cpolyline points='15 3 21 3 21 9'/%3E%3Cline x1='10' y1='14' x2='21' y2='3'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.40;
+  transition: opacity .2s ease, transform .2s ease;
+}
+.partner-card:hover::after {
+  opacity: 1;
+  transform: translate(2px, -2px);
 }
 .partner-card__head {
   display: flex;
