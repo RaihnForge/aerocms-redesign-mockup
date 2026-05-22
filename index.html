@@ -412,16 +412,31 @@
       { color: 'alert',   title: 'Threat quarantined',       sub: 'Malware sample &middot; 0 spread' },
       { color: 'success', title: 'M365 SaaS backup',         sub: 'Mailboxes &middot; 04:12 AM MST' }
     ];
-    // 7 candidate positions to randomize from. Avoid top-left where the
-    // persistent anchor sits. Each pick is non-overlapping by design.
-    var zonePool = [
-      { top: '14%',    right: '-5%' },
-      { top: '34%',    right: '-7%' },
-      { top: '54%',    right: '-4%' },
-      { top: '38%',    left:  '-8%' },
-      { bottom: '24%', left:  '-6%' },
-      { bottom: '4%',  right: '4%'  },
-      { bottom: '14%', right: '-6%' }
+    // Position GROUPS: slot 2 always gets a top-right zone, slot 3 a
+    // mid-band zone, slot 4 a bottom zone. Variety within groups, but
+    // guaranteed vertical spread so cards never clump. Slot 1 (anchor)
+    // sits at top-left so these groups all stay clear of that.
+    var positionGroups = [
+      // Slot 2: top-right cluster
+      [
+        { top: '8%',  right: '-5%' },
+        { top: '14%', right: '-7%' },
+        { top: '4%',  right: '-3%' }
+      ],
+      // Slot 3: middle band, left or right
+      [
+        { top: '42%', right: '-7%' },
+        { top: '46%', left:  '-8%' },
+        { top: '38%', left:  '-6%' },
+        { top: '52%', right: '-4%' }
+      ],
+      // Slot 4: bottom band
+      [
+        { bottom: '4%',  right: '6%'  },
+        { bottom: '20%', left:  '-6%' },
+        { bottom: '8%',  right: '-4%' },
+        { bottom: '14%', left:  '4%'  }
+      ]
     ];
     function pickRandom(arr, n) {
       var copy = arr.slice(), out = [];
@@ -431,13 +446,14 @@
       }
       return out;
     }
+    function pickOne(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
     var slots = document.querySelectorAll('.hero__visual .hero__card-wrap[data-slot]');
     if (!slots.length) return;
     var statusPicks = pickRandom(statusPool, slots.length);
-    var zonePicks   = pickRandom(zonePool,   slots.length);
     slots.forEach(function (wrap, i) {
       var s = statusPicks[i];
-      var z = zonePicks[i];
+      var group = positionGroups[i] || positionGroups[positionGroups.length - 1];
+      var z = pickOne(group);
       if (!s || !z) return;
       // Apply random position
       Object.keys(z).forEach(function (k) { wrap.style[k] = z[k]; });
@@ -455,9 +471,10 @@
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     var allWraps = document.querySelectorAll('.hero__visual .hero__card-wrap');
     // Depth factor per slot index (anchor + 3 randomized). Slot 1 moves
-    // least (it's the persistent anchor), slot 4 moves most -- creates
-    // a layered depth feel.
-    var depths = [0.010, 0.020, 0.028, 0.036];
+    // least (persistent anchor), slot 4 moves most -- layered depth feel.
+    // Values intentionally tiny (~15% of an aggressive parallax) so the
+    // motion is felt, not seen.
+    var depths = [0.0015, 0.003, 0.0042, 0.0055];
     var targetX = 0, targetY = 0;
     var currentX = 0, currentY = 0;
     var rafQueued = false;
