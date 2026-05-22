@@ -484,72 +484,12 @@ h1, h2, h3, h4, h5 {
   gap: 24px;
 }
 .service-card {
-  position: relative;
   background: rgba(255, 255, 255, 0.78);
   backdrop-filter: blur(6px);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 36px;
-  overflow: visible; /* pillar ::before bleeds beyond card bounds */
   transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease, background .2s ease;
-}
-/* Inner content sits above the watermark layer */
-.service-card > * { position: relative; z-index: 1; }
-
-/* Pillar (::before): vertical rounded bar bleeding left + top + bottom.
-   z-index: -1 puts it behind the card's own background; only the parts
-   that extend beyond the card box are visible. */
-.service-card::before {
-  content: '';
-  position: absolute;
-  left: -9px;
-  top: -16px;
-  bottom: -16px;
-  width: 24px;
-  border-radius: 5px;
-  background: linear-gradient(180deg,
-    var(--teal-700) 0%,
-    var(--teal-500) 7%,
-    var(--teal-500) 93%,
-    var(--teal-700) 100%);
-  box-shadow: 0 6px 18px rgba(15, 42, 51, 0.18);
-  z-index: -1;
-  pointer-events: none;
-}
-.service-card--security::before {
-  background: linear-gradient(180deg, #8C3614 0%, #C24E20 7%, #C24E20 93%, #8C3614 100%);
-}
-.service-card--cloud::before {
-  background: linear-gradient(180deg, #1F4E7E 0%, #2D6AA8 7%, #2D6AA8 93%, #1F4E7E 100%);
-}
-.service-card--hardware::before {
-  background: linear-gradient(180deg, #8A621F 0%, #B8842A 7%, #B8842A 93%, #8A621F 100%);
-}
-
-/* Watermark (::after): large icon centered behind content. ~70% of card,
-   ~18% opacity so it reads as a brand mark without competing with text. */
-.service-card::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 70% auto;
-  border-radius: inherit;
-  opacity: 0.18;
-  pointer-events: none;
-  z-index: 0;
-  /* IT Business default: three horizontal lines (menu/list mark) */
-  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23218399' stroke-width='1.5' stroke-linecap='round'%3E%3Cpath d='M3 7h18M3 12h18M3 17h18'/%3E%3C/svg%3E");
-}
-.service-card--security::after {
-  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C24E20' stroke-width='1.5' stroke-linejoin='round'%3E%3Cpath d='M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z'/%3E%3C/svg%3E");
-}
-.service-card--cloud::after {
-  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232D6AA8' stroke-width='1.5' stroke-linejoin='round'%3E%3Cpath d='M17 18a4 4 0 1 0-1.3-7.8A6 6 0 0 0 4 12a4 4 0 0 0 0 8h13z'/%3E%3C/svg%3E");
-}
-.service-card--hardware::after {
-  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23B8842A' stroke-width='1.5' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='12' rx='2'/%3E%3Cpath d='M8 20h8M12 16v4' stroke-linecap='round'/%3E%3C/svg%3E");
 }
 .service-card:hover {
   transform: translateY(-4px);
