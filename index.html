@@ -79,16 +79,18 @@
     </div>
     <div class="hero__visual" aria-hidden="true">
       <img class="hero__photo" src="assets/images/hero-laptop.png" alt="" />
-      <!-- Slot 1 is the persistent "All systems healthy" anchor. Slots 2-4
-           get filled by JS with a random pick from a pool of 12 statuses
-           on each page load. -->
-      <div class="hero__card hero__card--1">
-        <div class="hero__card-dot"></div>
-        <span>All systems healthy</span>
+      <!-- Wrappers carry positioning + mouse-parallax transforms; inner
+           cards handle the float animation. Slot 1 = persistent
+           "All systems healthy" anchor; slots 2-4 are randomized on load. -->
+      <div class="hero__card-wrap hero__card-wrap--1">
+        <div class="hero__card hero__card--1">
+          <div class="hero__card-dot"></div>
+          <span>All systems healthy</span>
+        </div>
       </div>
-      <div class="hero__card hero__card--2" data-slot="2"></div>
-      <div class="hero__card hero__card--3" data-slot="3"></div>
-      <div class="hero__card hero__card--4" data-slot="4"></div>
+      <div class="hero__card-wrap" data-slot="2"></div>
+      <div class="hero__card-wrap" data-slot="3"></div>
+      <div class="hero__card-wrap" data-slot="4"></div>
     </div>
   </div>
 </section>
@@ -393,9 +395,10 @@
 
 <script src="assets/js/parallax.js" defer></script>
 <script>
-  // Hero status cards: pick 3 random from a 12-card pool on each load
+  // Hero status cards: randomize content + position, plus subtle
+  // counter-movement parallax that follows the mouse.
   (function () {
-    var pool = [
+    var statusPool = [
       { color: 'teal',    title: 'Patch deployed',           sub: 'Endpoint security &middot; 42 devices' },
       { color: 'alert',   title: 'Phishing attempt blocked', sub: 'Inbound email &middot; auto-quarantined' },
       { color: 'success', title: 'Backup verified',          sub: 'Office 365 &middot; 3:00 AM MST' },
@@ -409,6 +412,17 @@
       { color: 'alert',   title: 'Threat quarantined',       sub: 'Malware sample &middot; 0 spread' },
       { color: 'success', title: 'M365 SaaS backup',         sub: 'Mailboxes &middot; 04:12 AM MST' }
     ];
+    // 7 candidate positions to randomize from. Avoid top-left where the
+    // persistent anchor sits. Each pick is non-overlapping by design.
+    var zonePool = [
+      { top: '14%',    right: '-5%' },
+      { top: '34%',    right: '-7%' },
+      { top: '54%',    right: '-4%' },
+      { top: '38%',    left:  '-8%' },
+      { bottom: '24%', left:  '-6%' },
+      { bottom: '4%',  right: '4%'  },
+      { bottom: '14%', right: '-6%' }
+    ];
     function pickRandom(arr, n) {
       var copy = arr.slice(), out = [];
       for (var i = 0; i < n && copy.length; i++) {
@@ -417,17 +431,57 @@
       }
       return out;
     }
-    var slots = document.querySelectorAll('.hero__visual [data-slot]');
+    var slots = document.querySelectorAll('.hero__visual .hero__card-wrap[data-slot]');
     if (!slots.length) return;
-    var picks = pickRandom(pool, slots.length);
-    slots.forEach(function (slot, i) {
-      var item = picks[i];
-      if (!item) return;
-      slot.innerHTML =
-        '<span class="hero__card-led hero__card-led--' + item.color + '" aria-hidden="true"></span>' +
-        '<strong>' + item.title + '</strong>' +
-        '<span>' + item.sub + '</span>';
+    var statusPicks = pickRandom(statusPool, slots.length);
+    var zonePicks   = pickRandom(zonePool,   slots.length);
+    slots.forEach(function (wrap, i) {
+      var s = statusPicks[i];
+      var z = zonePicks[i];
+      if (!s || !z) return;
+      // Apply random position
+      Object.keys(z).forEach(function (k) { wrap.style[k] = z[k]; });
+      // Inject card markup (animation-delay set inline so it staggers
+      // regardless of which random slot got which card)
+      wrap.innerHTML =
+        '<div class="hero__card" style="animation-delay:' + (-2 * (i + 1)) + 's;">' +
+          '<span class="hero__card-led hero__card-led--' + s.color + '" aria-hidden="true"></span>' +
+          '<strong>' + s.title + '</strong>' +
+          '<span>' + s.sub + '</span>' +
+        '</div>';
     });
+
+    // Mouse parallax: counter-movement, very subtle, per-card depth
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var allWraps = document.querySelectorAll('.hero__visual .hero__card-wrap');
+    // Depth factor per slot index (anchor + 3 randomized). Slot 1 moves
+    // least (it's the persistent anchor), slot 4 moves most -- creates
+    // a layered depth feel.
+    var depths = [0.010, 0.020, 0.028, 0.036];
+    var targetX = 0, targetY = 0;
+    var currentX = 0, currentY = 0;
+    var rafQueued = false;
+    function tick() {
+      currentX += (targetX - currentX) * 0.08;
+      currentY += (targetY - currentY) * 0.08;
+      allWraps.forEach(function (wrap, i) {
+        var d = depths[i] || 0.02;
+        wrap.style.transform = 'translate3d(' + (-currentX * d).toFixed(2) + 'px,' + (-currentY * d).toFixed(2) + 'px,0)';
+      });
+      if (Math.abs(targetX - currentX) > 0.1 || Math.abs(targetY - currentY) > 0.1) {
+        requestAnimationFrame(tick);
+      } else {
+        rafQueued = false;
+      }
+    }
+    window.addEventListener('mousemove', function (e) {
+      targetX = e.clientX - window.innerWidth / 2;
+      targetY = e.clientY - window.innerHeight / 2;
+      if (!rafQueued) {
+        rafQueued = true;
+        requestAnimationFrame(tick);
+      }
+    }, { passive: true });
   })();
 
   // Mobile menu toggle

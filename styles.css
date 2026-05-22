@@ -339,8 +339,19 @@ h1, h2, h3, h4, h5 {
 }
 .hero__orbit { display: none; } /* deprecated, kept for back-compat */
 
-.hero__card {
+/* Card wrapper: handles positioning + mouse-parallax transform.
+   Inner .hero__card handles the float animation -- two layers of
+   transform so they don't conflict. */
+.hero__card-wrap {
   position: absolute;
+  will-change: transform;
+  z-index: 2;
+}
+.hero__card-wrap--1 { top: 8%; left: -4%; }
+/* Wrappers with data-slot get their position set inline by hero JS */
+
+.hero__card {
+  position: relative;
   background: #fff;
   border: 1px solid var(--border);
   border-radius: var(--radius);
