@@ -78,30 +78,17 @@
       </div>
     </div>
     <div class="hero__visual" aria-hidden="true">
+      <img class="hero__photo" src="assets/images/hero-laptop.png" alt="" />
+      <!-- Slot 1 is the persistent "All systems healthy" anchor. Slots 2-4
+           get filled by JS with a random pick from a pool of 12 statuses
+           on each page load. -->
       <div class="hero__card hero__card--1">
         <div class="hero__card-dot"></div>
         <span>All systems healthy</span>
       </div>
-      <div class="hero__card hero__card--2">
-        <span class="hero__card-led" aria-hidden="true"></span>
-        <strong>Patch deployed</strong>
-        <span>Endpoint security &middot; 42 devices</span>
-      </div>
-      <div class="hero__card hero__card--3">
-        <span class="hero__card-led" aria-hidden="true"></span>
-        <strong>Phishing attempt blocked</strong>
-        <span>Inbound email &middot; auto-quarantined</span>
-      </div>
-      <div class="hero__card hero__card--4">
-        <span class="hero__card-led" aria-hidden="true"></span>
-        <strong>Backup verified</strong>
-        <span>Office 365 &middot; 3:00 AM MST</span>
-      </div>
-      <svg class="hero__orbit" viewBox="0 0 400 400">
-        <circle cx="200" cy="200" r="160" />
-        <circle cx="200" cy="200" r="110" />
-        <circle cx="200" cy="200" r="60" />
-      </svg>
+      <div class="hero__card hero__card--2" data-slot="2"></div>
+      <div class="hero__card hero__card--3" data-slot="3"></div>
+      <div class="hero__card hero__card--4" data-slot="4"></div>
     </div>
   </div>
 </section>
@@ -406,6 +393,43 @@
 
 <script src="assets/js/parallax.js" defer></script>
 <script>
+  // Hero status cards: pick 3 random from a 12-card pool on each load
+  (function () {
+    var pool = [
+      { color: 'teal',    title: 'Patch deployed',           sub: 'Endpoint security &middot; 42 devices' },
+      { color: 'alert',   title: 'Phishing attempt blocked', sub: 'Inbound email &middot; auto-quarantined' },
+      { color: 'success', title: 'Backup verified',          sub: 'Office 365 &middot; 3:00 AM MST' },
+      { color: 'teal',    title: 'Helpdesk ticket resolved', sub: '#4827 &middot; 8 min response' },
+      { color: 'teal',    title: 'License renewed',          sub: 'M365 Business &middot; 12 seats' },
+      { color: 'success', title: 'VPN tunnel active',        sub: 'Remote team &middot; 18 connected' },
+      { color: 'teal',    title: 'Firewall update applied',  sub: 'Edge gateway &middot; rules synced' },
+      { color: 'success', title: 'Disk encryption verified', sub: 'Workstation fleet &middot; 100%' },
+      { color: 'teal',    title: 'MFA enrolled',             sub: 'New user &middot; baseline set' },
+      { color: 'teal',    title: 'Software update',          sub: 'Adobe CC &middot; 24 endpoints' },
+      { color: 'alert',   title: 'Threat quarantined',       sub: 'Malware sample &middot; 0 spread' },
+      { color: 'success', title: 'M365 SaaS backup',         sub: 'Mailboxes &middot; 04:12 AM MST' }
+    ];
+    function pickRandom(arr, n) {
+      var copy = arr.slice(), out = [];
+      for (var i = 0; i < n && copy.length; i++) {
+        var idx = Math.floor(Math.random() * copy.length);
+        out.push(copy.splice(idx, 1)[0]);
+      }
+      return out;
+    }
+    var slots = document.querySelectorAll('.hero__visual [data-slot]');
+    if (!slots.length) return;
+    var picks = pickRandom(pool, slots.length);
+    slots.forEach(function (slot, i) {
+      var item = picks[i];
+      if (!item) return;
+      slot.innerHTML =
+        '<span class="hero__card-led hero__card-led--' + item.color + '" aria-hidden="true"></span>' +
+        '<strong>' + item.title + '</strong>' +
+        '<span>' + item.sub + '</span>';
+    });
+  })();
+
   // Mobile menu toggle
   const menuBtn = document.getElementById('menuToggle');
   const nav = document.querySelector('.site-nav');
