@@ -1,0 +1,1492 @@
+{
+  "segmentCount": 297,
+  "duration": 1397.92,
+  "extractedAt": "2026-05-28T05:43:35.096Z",
+  "segments": [
+    {
+      "start": 0,
+      "end": 10.72,
+      "text": "Welcome to Infinite Scale, the ultimate guide to growth for managed service providers."
+    },
+    {
+      "start": 10.72,
+      "end": 15.64,
+      "text": "In this series, MSP entrepreneur James Vickery and author of Infinite Scale shares what he"
+    },
+    {
+      "start": 15.64,
+      "end": 20.24,
+      "text": "has learned about taking control of your business so you can break free from the tools, win"
+    },
+    {
+      "start": 20.24,
+      "end": 26.12,
+      "text": "more customers and be more profitable."
+    },
+    {
+      "start": 26.12,
+      "end": 32.68,
+      "text": "Welcome everyone, in today's episode James talks with Zach Johnson of Aero CMS on how"
+    },
+    {
+      "start": 32.68,
+      "end": 38.44,
+      "text": "to win monster deals, even if you're a smaller MSP, over to you James."
+    },
+    {
+      "start": 38.44,
+      "end": 43.48,
+      "text": "Welcome everybody and really excited today for another episode of Infinite Scale and"
+    },
+    {
+      "start": 43.48,
+      "end": 46.32,
+      "text": "I am here today with Zach Johnson."
+    },
+    {
+      "start": 46.32,
+      "end": 53.42,
+      "text": "Zach Johnson runs a MSP or an MSSP I think is a more accurate description of Zach's business"
+    },
+    {
+      "start": 53.42,
+      "end": 57.8,
+      "text": "and super excited to have you on the show Zach, welcome."
+    },
+    {
+      "start": 57.8,
+      "end": 60.62,
+      "text": "I'm glad to be here."
+    },
+    {
+      "start": 60.62,
+      "end": 65,
+      "text": "And so Zach we've known each other for, it's been a while now at least 18 months that"
+    },
+    {
+      "start": 65,
+      "end": 68.44,
+      "text": "we've been talking to one another and you know one of the things that's really stood"
+    },
+    {
+      "start": 68.44,
+      "end": 74.86,
+      "text": "out in our partnership is that you seem to have this ability to target really exciting"
+    },
+    {
+      "start": 74.86,
+      "end": 81.52,
+      "text": "opportunities and for the most part from what I can see much bigger opportunities than a"
+    },
+    {
+      "start": 81.52,
+      "end": 86,
+      "text": "lot of MSPs that we've spoken to certainly over the last few years."
+    },
+    {
+      "start": 86,
+      "end": 90.38,
+      "text": "Why don't we just start with you telling us all about the kind of opportunities you focus"
+    },
+    {
+      "start": 90.38,
+      "end": 93.16,
+      "text": "on and why?"
+    },
+    {
+      "start": 93.16,
+      "end": 99.12,
+      "text": "Well we have a particular philosophy that we've kind of developed and that is the concept"
+    },
+    {
+      "start": 99.12,
+      "end": 102.28,
+      "text": "of fully outsourced IT."
+    },
+    {
+      "start": 102.28,
+      "end": 106.56,
+      "text": "We built a service offering that is all inclusive."
+    },
+    {
+      "start": 106.56,
+      "end": 112.66,
+      "text": "So when the client pays our monthly bill and their annual cost to us like literally"
+    },
+    {
+      "start": 112.66,
+      "end": 121.76,
+      "text": "is their IT budget, like it's we take the entire budget and just operate as if we are"
+    },
+    {
+      "start": 121.76,
+      "end": 123.8,
+      "text": "their IT department."
+    },
+    {
+      "start": 123.8,
+      "end": 134.64,
+      "text": "Size isn't really a factor, I mean my smallest client is five seats and my largest is 7,000."
+    },
+    {
+      "start": 134.64,
+      "end": 140.48,
+      "text": "There's different facets we provide to those various clients, but the smaller ones, I mean"
+    },
+    {
+      "start": 140.48,
+      "end": 149.56,
+      "text": "on paper are actually the most profitable because we push that philosophy and the philosophy"
+    },
+    {
+      "start": 149.56,
+      "end": 156.44,
+      "text": "of it we are a fully staffed, fully mature IT department for you."
+    },
+    {
+      "start": 156.44,
+      "end": 167.28,
+      "text": "My most profitable client is a six employee law firm that's paying us $469 a seat."
+    },
+    {
+      "start": 167.28,
+      "end": 172.44,
+      "text": "I mean this staggering numbers, I mean sometimes when I'm looking around on Reddit, checking"
+    },
+    {
+      "start": 172.44,
+      "end": 180.16,
+      "text": "out some of the MSP forums, you see that MSPs are down at $30 a seat or $50 a seat, quite"
+    },
+    {
+      "start": 180.16,
+      "end": 183.6,
+      "text": "a long ways from where you're at today."
+    },
+    {
+      "start": 183.6,
+      "end": 184.6,
+      "text": "That's incredible."
+    },
+    {
+      "start": 184.6,
+      "end": 188.96,
+      "text": "How do you get a customer to start thinking like that, you know, to start thinking about"
+    },
+    {
+      "start": 188.96,
+      "end": 189.96,
+      "text": "the total cost?"
+    },
+    {
+      "start": 189.96,
+      "end": 194.5,
+      "text": "I suppose what you're referring to is the total cost of ownership, total cost of delivery"
+    },
+    {
+      "start": 194.5,
+      "end": 197.68,
+      "text": "to their business over the next next number of years."
+    },
+    {
+      "start": 197.68,
+      "end": 200.96,
+      "text": "How do you broach that conversation?"
+    },
+    {
+      "start": 200.96,
+      "end": 207.24,
+      "text": "Well early on actually, our sales cycle does the qualification very early, like within the"
+    },
+    {
+      "start": 207.24,
+      "end": 214.04,
+      "text": "first 15 minutes of the conversation, I basically explained we do fully outsourced IT, the hardware,"
+    },
+    {
+      "start": 214.04,
+      "end": 220.2,
+      "text": "the network, everything, we provide everything and everything is included, including projects."
+    },
+    {
+      "start": 220.2,
+      "end": 227.72,
+      "text": "There isn't literally nothing we won't be open to discussing doing as part of your contract."
+    },
+    {
+      "start": 227.72,
+      "end": 231.84,
+      "text": "And because of that, we are very expensive."
+    },
+    {
+      "start": 231.84,
+      "end": 238.04,
+      "text": "If expensive scares you away, then it was a pleasure meeting you."
+    },
+    {
+      "start": 238.04,
+      "end": 244.8,
+      "text": "If you change your mind, here's my card, like if they don't immediately see the potential"
+    },
+    {
+      "start": 244.8,
+      "end": 250.72,
+      "text": "value in that, then I probably don't want to do business with them."
+    },
+    {
+      "start": 250.72,
+      "end": 253.76,
+      "text": "That requires like a substantial amount of trust."
+    },
+    {
+      "start": 253.76,
+      "end": 259.08,
+      "text": "I mean, I think that a lot of MSPs are kind of struggling to open up the conversation"
+    },
+    {
+      "start": 259.08,
+      "end": 262.24,
+      "text": "even about a fairly low per user rate."
+    },
+    {
+      "start": 262.24,
+      "end": 267,
+      "text": "How do you kind of get that, I guess that brand and credibility, if you will, that you"
+    },
+    {
+      "start": 267,
+      "end": 271.24,
+      "text": "could actually have that conversation, have that conversation with a straight face, because"
+    },
+    {
+      "start": 271.24,
+      "end": 276.24,
+      "text": "I think a lot of MSPs really struggle to do that."
+    },
+    {
+      "start": 276.24,
+      "end": 281.48,
+      "text": "How are these prospects attracted to you, assuming that you're attracting ones that do qualify?"
+    },
+    {
+      "start": 281.48,
+      "end": 286.08,
+      "text": "Because in the time that I've known you, I've heard you land tons of these deals."
+    },
+    {
+      "start": 286.08,
+      "end": 287.92,
+      "text": "I mean, it's incredible."
+    },
+    {
+      "start": 287.92,
+      "end": 293.36,
+      "text": "So how do you develop that level of trust in the marketplace that you're actually able"
+    },
+    {
+      "start": 293.36,
+      "end": 296.04,
+      "text": "to have those conversations?"
+    },
+    {
+      "start": 296.04,
+      "end": 300.64,
+      "text": "That's an easy enough answer, aggressive brand awareness."
+    },
+    {
+      "start": 300.64,
+      "end": 309.52,
+      "text": "How we basically do that is we connect with every possible business association, chamber"
+    },
+    {
+      "start": 309.52,
+      "end": 318.46,
+      "text": "of commerce, like anything where business owners and business stakeholders gather in"
+    },
+    {
+      "start": 318.46,
+      "end": 327.88,
+      "text": "a meaningful way, and we participate in that, usually me, and then get with the leadership"
+    },
+    {
+      "start": 327.88,
+      "end": 334.28,
+      "text": "of whatever organization that is, and ask, can we host a learning event?"
+    },
+    {
+      "start": 334.28,
+      "end": 339.84,
+      "text": "And we get with them, and they almost always say yes, because they like outreach things,"
+    },
+    {
+      "start": 339.84,
+      "end": 342.28,
+      "text": "and so we do almost pure outreach."
+    },
+    {
+      "start": 342.28,
+      "end": 344.56,
+      "text": "It's never a sales pitch."
+    },
+    {
+      "start": 344.56,
+      "end": 350.24,
+      "text": "We never come off as sales pitchy that we're not shilling for our own company."
+    },
+    {
+      "start": 350.24,
+      "end": 357.6,
+      "text": "It's like we show up, and I spend like 30 minutes explaining this is Office 365, and"
+    },
+    {
+      "start": 357.6,
+      "end": 362.8,
+      "text": "this is how it's been transforming businesses, and this is why."
+    },
+    {
+      "start": 362.8,
+      "end": 365.2,
+      "text": "You know, 30 minutes right there."
+    },
+    {
+      "start": 365.2,
+      "end": 370.36,
+      "text": "It sounds like having a deep product knowledge is a big help in these situations."
+    },
+    {
+      "start": 370.36,
+      "end": 376.32,
+      "text": "So how these applications like Office 365 actually can transform their business is not"
+    },
+    {
+      "start": 376.32,
+      "end": 382.2,
+      "text": "just an email tool, or a document management tool is actually goes a lot deeper than that."
+    },
+    {
+      "start": 382.2,
+      "end": 386.92,
+      "text": "So it sounds like you're feeling a lot more comfortable to have those kinds of conversations,"
+    },
+    {
+      "start": 386.92,
+      "end": 388.72,
+      "text": "and that's the attraction."
+    },
+    {
+      "start": 388.72,
+      "end": 395.88,
+      "text": "The overarching theme is always this is how technology transforms business."
+    },
+    {
+      "start": 395.88,
+      "end": 396.88,
+      "text": "Gotcha."
+    },
+    {
+      "start": 396.88,
+      "end": 401.32,
+      "text": "We don't talk about the technology and how cool it is, and how whizbang it is, and with"
+    },
+    {
+      "start": 401.32,
+      "end": 404.56,
+      "text": "all the widgets, and the giz mods, and the whatnots."
+    },
+    {
+      "start": 404.56,
+      "end": 409.52,
+      "text": "It's like this is technology, and this is the impact technology has on a business."
+    },
+    {
+      "start": 409.52,
+      "end": 415.24,
+      "text": "And that was a difficult lesson to learn, but that's what resonates with the clients,"
+    },
+    {
+      "start": 415.24,
+      "end": 421.56,
+      "text": "because the clients and potential clients, they don't care how the sausage is made, right?"
+    },
+    {
+      "start": 421.56,
+      "end": 427.48,
+      "text": "They just want to know why my sausage is so much better than everybody else's sausage."
+    },
+    {
+      "start": 427.48,
+      "end": 428.48,
+      "text": "Gotcha."
+    },
+    {
+      "start": 428.48,
+      "end": 433.72,
+      "text": "And so I talk about the sausage and how the sausage is good for them."
+    },
+    {
+      "start": 433.72,
+      "end": 436.72,
+      "text": "That makes sense."
+    },
+    {
+      "start": 436.72,
+      "end": 441.72,
+      "text": "It does make sense."
+    },
+    {
+      "start": 441.72,
+      "end": 445.44,
+      "text": "All right."
+    },
+    {
+      "start": 445.44,
+      "end": 450.8,
+      "text": "So you seem really confident, you know, in the way that you're, you know, kind of talking"
+    },
+    {
+      "start": 450.8,
+      "end": 454.68,
+      "text": "about this now, and obviously the way that you're talking to clients."
+    },
+    {
+      "start": 454.68,
+      "end": 460.88,
+      "text": "What did you need to do to kind of tool up and skill up to be able to, to be able to"
+    },
+    {
+      "start": 460.88,
+      "end": 461.88,
+      "text": "take on opportunities?"
+    },
+    {
+      "start": 461.88,
+      "end": 467.08,
+      "text": "Or to be able to just to have these conversations with clients, what were you doing in the tool"
+    },
+    {
+      "start": 467.08,
+      "end": 468.08,
+      "text": "shed?"
+    },
+    {
+      "start": 468.08,
+      "end": 474.48,
+      "text": "Like, what were you doing to skill up appropriately to kind of be out there and having these conversations"
+    },
+    {
+      "start": 474.48,
+      "end": 480.32,
+      "text": "and doing $400 plus a user deals, and like, by the way, everyone that's kind of listening"
+    },
+    {
+      "start": 480.32,
+      "end": 486.68,
+      "text": "out there, I've known Zach for quite a long time now and it staggers me every single day."
+    },
+    {
+      "start": 486.68,
+      "end": 489.56,
+      "text": "We deal with a very broad range of MSPs."
+    },
+    {
+      "start": 489.56,
+      "end": 491.64,
+      "text": "We see a whole bunch of opportunities out there."
+    },
+    {
+      "start": 491.64,
+      "end": 494.48,
+      "text": "We see a lot of small business opportunities."
+    },
+    {
+      "start": 494.48,
+      "end": 498.72,
+      "text": "Every time I talk to Zach, he's talking about something like this and actually landing it"
+    },
+    {
+      "start": 498.72,
+      "end": 504.2,
+      "text": "and then the benchmark 365 team is delivering it and it blows my mind."
+    },
+    {
+      "start": 504.2,
+      "end": 508.16,
+      "text": "So Zach, what did you need to do like leading up to this point?"
+    },
+    {
+      "start": 508.16,
+      "end": 511,
+      "text": "How did you get to this point?"
+    },
+    {
+      "start": 511,
+      "end": 515.72,
+      "text": "Well, the answer there is I was always very technical."
+    },
+    {
+      "start": 515.72,
+      "end": 517.24,
+      "text": "I was an engineer."
+    },
+    {
+      "start": 517.24,
+      "end": 523.16,
+      "text": "I knew the ins and outs of how the technology worked and what it could and couldn't do."
+    },
+    {
+      "start": 523.16,
+      "end": 529.32,
+      "text": "But what I had to learn was what does that mean to a business?"
+    },
+    {
+      "start": 529.32,
+      "end": 534.16,
+      "text": "So I actually had to learn the business side of things, right?"
+    },
+    {
+      "start": 534.16,
+      "end": 538.72,
+      "text": "I had to understand what the business was trying to achieve."
+    },
+    {
+      "start": 538.72,
+      "end": 544.76,
+      "text": "Obviously the core principle of any business is to make money, but how did they do that?"
+    },
+    {
+      "start": 544.76,
+      "end": 552.44,
+      "text": "What activities does that the staff of that business perform that leads to revenue?"
+    },
+    {
+      "start": 552.44,
+      "end": 561.32,
+      "text": "Then look at how they do it and ask myself, okay, what technology can further that goal?"
+    },
+    {
+      "start": 561.32,
+      "end": 565.84,
+      "text": "Either make them do it faster or do more of it overall."
+    },
+    {
+      "start": 565.84,
+      "end": 570.16,
+      "text": "And so that's the fundamental goal."
+    },
+    {
+      "start": 570.16,
+      "end": 576,
+      "text": "They call that business transformation now, like that you should focus on not just having"
+    },
+    {
+      "start": 576,
+      "end": 584.48,
+      "text": "technology because it's a necessity, but leveraging technology to actually increase your business"
+    },
+    {
+      "start": 584.48,
+      "end": 590.32,
+      "text": "in some capacity, whether that be increased efficiency, whether that increase footprint,"
+    },
+    {
+      "start": 590.32,
+      "end": 592.92,
+      "text": "whether that be to scale."
+    },
+    {
+      "start": 592.92,
+      "end": 597.68,
+      "text": "And it's learning to recognize what those struggles might be and how you might be able"
+    },
+    {
+      "start": 597.68,
+      "end": 600.84,
+      "text": "to help them overcome those struggles."
+    },
+    {
+      "start": 600.84,
+      "end": 601.84,
+      "text": "Got it."
+    },
+    {
+      "start": 601.84,
+      "end": 607.2,
+      "text": "See, you know, it's something we talked earlier in the podcast about is, you know, I've developed"
+    },
+    {
+      "start": 607.2,
+      "end": 611.04,
+      "text": "an obsession with our customers in the MSP space."
+    },
+    {
+      "start": 611.04,
+      "end": 615.64,
+      "text": "And I've since said, I think you know this since translated that into an obsession with"
+    },
+    {
+      "start": 615.64,
+      "end": 617.72,
+      "text": "our benchmark 365 partners."
+    },
+    {
+      "start": 617.72,
+      "end": 623.94,
+      "text": "So kind of like really thinking about the problems that they're having, like really getting close"
+    },
+    {
+      "start": 623.94,
+      "end": 628.08,
+      "text": "to the problems that they're having and then coming up with a solution for that."
+    },
+    {
+      "start": 628.08,
+      "end": 630.6,
+      "text": "And it sounds like you've even done that twofold."
+    },
+    {
+      "start": 630.6,
+      "end": 635.08,
+      "text": "So you've developed like an obsession with the technologies that are available."
+    },
+    {
+      "start": 635.08,
+      "end": 640.08,
+      "text": "And then you started to drill down into a customer and look at their business kind of like the"
+    },
+    {
+      "start": 640.08,
+      "end": 645.68,
+      "text": "whole thing and be very proactive about, I'm not just selling a solution for today, I'm"
+    },
+    {
+      "start": 645.68,
+      "end": 650.4,
+      "text": "selling a total solution that will take this company to the next level over the next sort"
+    },
+    {
+      "start": 650.4,
+      "end": 651.8,
+      "text": "of three to five years."
+    },
+    {
+      "start": 651.8,
+      "end": 653.32,
+      "text": "Is that, is that accurate?"
+    },
+    {
+      "start": 653.32,
+      "end": 657.32,
+      "text": "You know, is that kind of like the way I would say so and like, I think an important thing"
+    },
+    {
+      "start": 657.32,
+      "end": 665.08,
+      "text": "to point out was you talk about how you have witnessed a broad segment of MSPs."
+    },
+    {
+      "start": 665.08,
+      "end": 673.88,
+      "text": "And you've probably noticed that the problems these MSPs have is pretty finite, right?"
+    },
+    {
+      "start": 673.88,
+      "end": 680.76,
+      "text": "Like there's probably a pretty common set of typical type of struggles these MSPs deal"
+    },
+    {
+      "start": 680.76,
+      "end": 681.76,
+      "text": "with."
+    },
+    {
+      "start": 681.76,
+      "end": 689.36,
+      "text": "Well, I've learned that every business has the same pro-typical set of struggles that"
+    },
+    {
+      "start": 689.36,
+      "end": 691.64,
+      "text": "they typically deal with."
+    },
+    {
+      "start": 691.64,
+      "end": 696.6,
+      "text": "And it's usually can be categorized by like industry vertical, right?"
+    },
+    {
+      "start": 696.6,
+      "end": 703.76,
+      "text": "You know, accountancy firms have the same sort of struggles across all accountancy firms."
+    },
+    {
+      "start": 703.76,
+      "end": 710.2,
+      "text": "And what particular one they're dealing with at that moment is usually tied to where they"
+    },
+    {
+      "start": 710.2,
+      "end": 714.84,
+      "text": "are on sort of that business maturity curve."
+    },
+    {
+      "start": 714.84,
+      "end": 720.08,
+      "text": "Same could be said for like service-based industries like, you know, industrial controls,"
+    },
+    {
+      "start": 720.08,
+      "end": 722.4,
+      "text": "manufacturing, you know, HVAC."
+    },
+    {
+      "start": 722.4,
+      "end": 727.84,
+      "text": "They all do the same thing and all struggle with the same thing."
+    },
+    {
+      "start": 727.84,
+      "end": 733.72,
+      "text": "And so like once you see a broad enough sample of various types of businesses at various"
+    },
+    {
+      "start": 733.72,
+      "end": 739.76,
+      "text": "points in their maturity, like you start to recognize the typical struggles."
+    },
+    {
+      "start": 739.76,
+      "end": 744.66,
+      "text": "And once you can kind of create that baseline of the typical struggle, then you can start"
+    },
+    {
+      "start": 744.66,
+      "end": 751,
+      "text": "crafting typical solutions and then applying those solutions and getting actionable results"
+    },
+    {
+      "start": 751,
+      "end": 752,
+      "text": "out of it."
+    },
+    {
+      "start": 752,
+      "end": 753,
+      "text": "Gotcha."
+    },
+    {
+      "start": 753,
+      "end": 759.92,
+      "text": "Look, a lot of MSPs that are listening today and I can really relate to this having been"
+    },
+    {
+      "start": 759.92,
+      "end": 766.32,
+      "text": "a smaller provider, you know, when I first started out, I needed to get deals closed quickly"
+    },
+    {
+      "start": 766.32,
+      "end": 768.48,
+      "text": "because I needed cash flow."
+    },
+    {
+      "start": 768.48,
+      "end": 773.2,
+      "text": "So I found that I wasn't looking at like the bigger picture for my customer."
+    },
+    {
+      "start": 773.2,
+      "end": 777.92,
+      "text": "I just needed to sell a solution right now so I could get some cash in the door and kind"
+    },
+    {
+      "start": 777.92,
+      "end": 780.28,
+      "text": "of put food on the table."
+    },
+    {
+      "start": 780.28,
+      "end": 786.64,
+      "text": "That was my whole sales methodology for many, many years in my MSP."
+    },
+    {
+      "start": 786.64,
+      "end": 792.6,
+      "text": "And the reason that my focus stayed that way and probably why a lot of MSPs focus stays"
+    },
+    {
+      "start": 792.6,
+      "end": 796.56,
+      "text": "that way is it takes a really long time to close big deals."
+    },
+    {
+      "start": 796.56,
+      "end": 799.16,
+      "text": "Like it tends to take a long time."
+    },
+    {
+      "start": 799.16,
+      "end": 805.52,
+      "text": "What advice do you have for an MSP that kind of wants to transition from quick wins and"
+    },
+    {
+      "start": 805.52,
+      "end": 811.04,
+      "text": "quick cash flow to the sort of deals that you're talking about now, which might take"
+    },
+    {
+      "start": 811.04,
+      "end": 815.72,
+      "text": "a little bit longer and might mean a bit of a famine potentially between now and when"
+    },
+    {
+      "start": 815.72,
+      "end": 820.16,
+      "text": "they land that big monster deal like the ones you're talking about."
+    },
+    {
+      "start": 820.16,
+      "end": 828.6,
+      "text": "Oh, that's such a hard question to answer because like you have to be at a certain maturity"
+    },
+    {
+      "start": 828.6,
+      "end": 838.52,
+      "text": "level with a certain like sort of average MRR to be stable and getting from basically"
+    },
+    {
+      "start": 838.52,
+      "end": 845.56,
+      "text": "constant famine to that point where you're stable enough to start chasing a longer sales"
+    },
+    {
+      "start": 845.56,
+      "end": 850.84,
+      "text": "pipeline is really hard to say how to do that."
+    },
+    {
+      "start": 850.84,
+      "end": 852.8,
+      "text": "Is it a mindset change?"
+    },
+    {
+      "start": 852.8,
+      "end": 856.06,
+      "text": "Overall, it can be."
+    },
+    {
+      "start": 856.06,
+      "end": 861.28,
+      "text": "It just kind of depends on where you're at in sort of your journey to maturity."
+    },
+    {
+      "start": 861.28,
+      "end": 866.64,
+      "text": "Early on, like we just like you would take anything that was thrown at us, right?"
+    },
+    {
+      "start": 866.64,
+      "end": 872.16,
+      "text": "Like any scrap tossed on the ground, we'd pick up and run with it and like we did everything"
+    },
+    {
+      "start": 872.16,
+      "end": 875.32,
+      "text": "we could just bring money in."
+    },
+    {
+      "start": 875.32,
+      "end": 881.68,
+      "text": "And at a certain sort of early stage of the evolution of your business, that's pretty"
+    },
+    {
+      "start": 881.68,
+      "end": 883.2,
+      "text": "necessary, right?"
+    },
+    {
+      "start": 883.2,
+      "end": 885.4,
+      "text": "You got to take what you can get."
+    },
+    {
+      "start": 885.4,
+      "end": 895.24,
+      "text": "But you need to be very conscious of your financials and how doing that impacts your"
+    },
+    {
+      "start": 895.24,
+      "end": 903.64,
+      "text": "long term positions scavenging for scraps could be necessary just to have the cash flow."
+    },
+    {
+      "start": 903.64,
+      "end": 907.08,
+      "text": "But you need to understand that you cannot do that forever."
+    },
+    {
+      "start": 907.08,
+      "end": 914.52,
+      "text": "So have a plan, have a goal, like understand what things cost and where you need to be"
+    },
+    {
+      "start": 914.52,
+      "end": 916.92,
+      "text": "to move to the next step."
+    },
+    {
+      "start": 916.92,
+      "end": 921.96,
+      "text": "Whether that be, you know, when do I start turning the scraps away?"
+    },
+    {
+      "start": 921.96,
+      "end": 926.88,
+      "text": "You know, I can't give you a specific number because it's going to vary so much business"
+    },
+    {
+      "start": 926.88,
+      "end": 929.12,
+      "text": "to business, right?"
+    },
+    {
+      "start": 929.12,
+      "end": 934.52,
+      "text": "But like at some, you should have that plan, it's just like, okay, I'm in my early stages,"
+    },
+    {
+      "start": 934.52,
+      "end": 939.44,
+      "text": "I need to take whatever scraps I can get, turn nothing away, quick cash flow, turn it"
+    },
+    {
+      "start": 939.44,
+      "end": 945.88,
+      "text": "around as quickly as possible, start building up, you know, hopefully a nest egg, right?"
+    },
+    {
+      "start": 945.88,
+      "end": 951.12,
+      "text": "Don't draw too much out of the business, that's something we focused on very early"
+    },
+    {
+      "start": 951.12,
+      "end": 959.68,
+      "text": "on was my salary was very, very minimal in the early days and everything, every scrap"
+    },
+    {
+      "start": 959.68,
+      "end": 965.84,
+      "text": "of everything was set aside so that we could invest in our own futures."
+    },
+    {
+      "start": 965.84,
+      "end": 970.32,
+      "text": "Certainly if you're in an early stage as a company or even a little bit later down the"
+    },
+    {
+      "start": 970.32,
+      "end": 974.2,
+      "text": "road, it's just you've got to do what you've got to do, right?"
+    },
+    {
+      "start": 974.2,
+      "end": 978.8,
+      "text": "You've got to get these even small opportunities done because I think the saying is little"
+    },
+    {
+      "start": 978.8,
+      "end": 983.72,
+      "text": "fisher sweet, but in the long run, you've got to start to plan out how to build value"
+    },
+    {
+      "start": 983.72,
+      "end": 988.08,
+      "text": "both in your customers and in your own company and it sounds like you've done a really great"
+    },
+    {
+      "start": 988.08,
+      "end": 989.68,
+      "text": "job of that."
+    },
+    {
+      "start": 989.68,
+      "end": 995.96,
+      "text": "My next question is, you've worked with Benchmark for the last 12 months."
+    },
+    {
+      "start": 995.96,
+      "end": 1001.28,
+      "text": "My question is, in today's MSP environment, do you need to be a big company in order"
+    },
+    {
+      "start": 1001.28,
+      "end": 1003.84,
+      "text": "to handle bigger deals?"
+    },
+    {
+      "start": 1003.84,
+      "end": 1005.52,
+      "text": "I don't think so."
+    },
+    {
+      "start": 1005.52,
+      "end": 1008.52,
+      "text": "How do you define a big company, right?"
+    },
+    {
+      "start": 1008.52,
+      "end": 1012.72,
+      "text": "What does it mean for you to be a big company, to have 30 employees?"
+    },
+    {
+      "start": 1012.72,
+      "end": 1021.92,
+      "text": "Well, I have 30 people at Benchmark that are on my team, does that not count?"
+    },
+    {
+      "start": 1021.92,
+      "end": 1025.28,
+      "text": "It's all about how you frame it in your own mind."
+    },
+    {
+      "start": 1025.28,
+      "end": 1030.2,
+      "text": "I've always used the mindset that Benchmark isn't a vendor."
+    },
+    {
+      "start": 1030.2,
+      "end": 1031.88,
+      "text": "Benchmark is my team."
+    },
+    {
+      "start": 1031.88,
+      "end": 1033.64,
+      "text": "I think of them that way."
+    },
+    {
+      "start": 1033.64,
+      "end": 1043.52,
+      "text": "I treat them that way and I leverage them that way and that's always been like my philosophy"
+    },
+    {
+      "start": 1043.52,
+      "end": 1044.68,
+      "text": "on it."
+    },
+    {
+      "start": 1044.68,
+      "end": 1046.56,
+      "text": "It's a frame of mind."
+    },
+    {
+      "start": 1046.56,
+      "end": 1057.28,
+      "text": "If you don't see yourself as a small company, then you shouldn't be afraid of complex deals."
+    },
+    {
+      "start": 1057.28,
+      "end": 1063.8,
+      "text": "It's amazing when we see that switch flick in the mind of our partners."
+    },
+    {
+      "start": 1063.8,
+      "end": 1068.08,
+      "text": "Obviously, when someone signs up with Benchmark, there's that trepidation period where it's"
+    },
+    {
+      "start": 1068.08,
+      "end": 1070.24,
+      "text": "like, \"No, really, no what you're getting."
+    },
+    {
+      "start": 1070.24,
+      "end": 1071.88,
+      "text": "You don't really know if it's going to work.\""
+    },
+    {
+      "start": 1071.88,
+      "end": 1077.08,
+      "text": "There's this fear around the whole process and then somewhere down the line, usually"
+    },
+    {
+      "start": 1077.08,
+      "end": 1083.92,
+      "text": "in that first few months, there's this realization that, \"Wow, I've got infinite capacity to"
+    },
+    {
+      "start": 1083.92,
+      "end": 1085.4,
+      "text": "go out and sell.\""
+    },
+    {
+      "start": 1085.4,
+      "end": 1089.48,
+      "text": "I used to have to worry about whether we could deliver, I used to worry about whether if"
+    },
+    {
+      "start": 1089.48,
+      "end": 1095.24,
+      "text": "I go and sell a really large deal, do I have the resources, do I have the technical capability"
+    },
+    {
+      "start": 1095.24,
+      "end": 1102.4,
+      "text": "to actually meet that customer's needs and actually underpin the sale that I've made?"
+    },
+    {
+      "start": 1102.4,
+      "end": 1106.84,
+      "text": "When we see that switch flick, it kind of dig with you immediately."
+    },
+    {
+      "start": 1106.84,
+      "end": 1111.08,
+      "text": "When we see it with most partners and they switch around, it's incredible."
+    },
+    {
+      "start": 1111.08,
+      "end": 1113.96,
+      "text": "The growth is just incredible thereafter."
+    },
+    {
+      "start": 1113.96,
+      "end": 1118.08,
+      "text": "I think that certainly you've been a great example of that, Zach."
+    },
+    {
+      "start": 1118.08,
+      "end": 1119.08,
+      "text": "It's a mindset."
+    },
+    {
+      "start": 1119.08,
+      "end": 1122.92,
+      "text": "Like, once you change your mindset, you see the world differently."
+    },
+    {
+      "start": 1122.92,
+      "end": 1124.56,
+      "text": "You see the deals differently."
+    },
+    {
+      "start": 1124.56,
+      "end": 1125.56,
+      "text": "Yeah."
+    },
+    {
+      "start": 1125.56,
+      "end": 1126.56,
+      "text": "Yeah."
+    },
+    {
+      "start": 1126.56,
+      "end": 1127.56,
+      "text": "Amazing."
+    },
+    {
+      "start": 1127.56,
+      "end": 1130.92,
+      "text": "And so, what's the next 12 months look like for you?"
+    },
+    {
+      "start": 1130.92,
+      "end": 1132.7,
+      "text": "We're kind of a year down the road."
+    },
+    {
+      "start": 1132.7,
+      "end": 1137.6,
+      "text": "You've obviously had some astonishing results in your company over the last 12 months."
+    },
+    {
+      "start": 1137.6,
+      "end": 1138.88,
+      "text": "What's your plan to scale?"
+    },
+    {
+      "start": 1138.88,
+      "end": 1141,
+      "text": "Where do you take it from here?"
+    },
+    {
+      "start": 1141,
+      "end": 1148.88,
+      "text": "Well, we plan on aggressively pursuing security opportunities as we're finding those to be"
+    },
+    {
+      "start": 1148.88,
+      "end": 1153.36,
+      "text": "extremely profitable and that there's extremely high demand."
+    },
+    {
+      "start": 1153.36,
+      "end": 1163.68,
+      "text": "Like my sales pipeline has six deals in it right now that are in excess of 1,000 seats."
+    },
+    {
+      "start": 1163.68,
+      "end": 1167.8,
+      "text": "And we're aggressively pursuing those."
+    },
+    {
+      "start": 1167.8,
+      "end": 1179.08,
+      "text": "And I hope to close at least two of them over the next quarter, like Q1."
+    },
+    {
+      "start": 1179.08,
+      "end": 1186.92,
+      "text": "And there's a real chance that we're going to double the MRR this coming year over the"
+    },
+    {
+      "start": 1186.92,
+      "end": 1188.88,
+      "text": "previous year."
+    },
+    {
+      "start": 1188.88,
+      "end": 1189.88,
+      "text": "Incredible."
+    },
+    {
+      "start": 1189.88,
+      "end": 1191.28,
+      "text": "There's some big numbers."
+    },
+    {
+      "start": 1191.28,
+      "end": 1198.04,
+      "text": "So I think that's some really great content for today's podcast and anyone listening love"
+    },
+    {
+      "start": 1198.04,
+      "end": 1203,
+      "text": "to hear your examples of how you've kind of leveraged and scaled up your business and"
+    },
+    {
+      "start": 1203,
+      "end": 1205.54,
+      "text": "how you've targeted bigger customers."
+    },
+    {
+      "start": 1205.54,
+      "end": 1210.8,
+      "text": "What are your three big takeaways today, Zach, for anyone that's looking to kind of transition"
+    },
+    {
+      "start": 1210.8,
+      "end": 1214.88,
+      "text": "away from small business IT and take on bigger business?"
+    },
+    {
+      "start": 1214.88,
+      "end": 1216.96,
+      "text": "What are your three key takeaways?"
+    },
+    {
+      "start": 1216.96,
+      "end": 1224.68,
+      "text": "Well, I think an important one would be don't be afraid of large deals."
+    },
+    {
+      "start": 1224.68,
+      "end": 1231.12,
+      "text": "The second takeaway is just because if it's a large deal, doesn't mean you need to discount"
+    },
+    {
+      "start": 1231.12,
+      "end": 1232.12,
+      "text": "it."
+    },
+    {
+      "start": 1232.12,
+      "end": 1236.72,
+      "text": "Economy of scale does not necessarily apply to IT services."
+    },
+    {
+      "start": 1236.72,
+      "end": 1240.48,
+      "text": "Just because it's larger doesn't mean it's cheaper to do."
+    },
+    {
+      "start": 1240.48,
+      "end": 1242.6,
+      "text": "It's actually more complex."
+    },
+    {
+      "start": 1242.6,
+      "end": 1246.88,
+      "text": "And larger companies understand this."
+    },
+    {
+      "start": 1246.88,
+      "end": 1253.2,
+      "text": "Larger companies have a much different mindset than small companies."
+    },
+    {
+      "start": 1253.2,
+      "end": 1261.96,
+      "text": "They understand that quality costs big money and they have the money to spend."
+    },
+    {
+      "start": 1261.96,
+      "end": 1268.36,
+      "text": "Outsourcing is what gives you capability, the scale to get to that size."
+    },
+    {
+      "start": 1268.36,
+      "end": 1274.04,
+      "text": "I could probably comment on what is a reasonable expectation for service delivery."
+    },
+    {
+      "start": 1274.04,
+      "end": 1279.36,
+      "text": "And larger clients have a different perspective on that."
+    },
+    {
+      "start": 1279.36,
+      "end": 1285.2,
+      "text": "For smaller clients, you get obsessed about whether Karen at the front desk was happy"
+    },
+    {
+      "start": 1285.2,
+      "end": 1287.24,
+      "text": "with what you did."
+    },
+    {
+      "start": 1287.24,
+      "end": 1293.4,
+      "text": "For a 500C company, the key stakeholder that's paying for your services does not care what"
+    },
+    {
+      "start": 1293.4,
+      "end": 1297.28,
+      "text": "Karen and HR thinks about her interaction with help desk."
+    },
+    {
+      "start": 1297.28,
+      "end": 1304.8,
+      "text": "What they care about was the service delivered in a reasonable fashion."
+    },
+    {
+      "start": 1304.8,
+      "end": 1309.32,
+      "text": "It's almost like you're finding that smaller companies can be a little bit commercially"
+    },
+    {
+      "start": 1309.32,
+      "end": 1310.32,
+      "text": "unrealistic."
+    },
+    {
+      "start": 1310.32,
+      "end": 1314.64,
+      "text": "They require that really white glove service."
+    },
+    {
+      "start": 1314.64,
+      "end": 1319.36,
+      "text": "Even when it's not economically viable to deliver that sometimes, larger companies are"
+    },
+    {
+      "start": 1319.36,
+      "end": 1323.96,
+      "text": "more commercially realistic and practical about the outcome."
+    },
+    {
+      "start": 1323.96,
+      "end": 1325.32,
+      "text": "They see it as a whole."
+    },
+    {
+      "start": 1325.32,
+      "end": 1328.8,
+      "text": "They don't see it as Karen wasn't happy."
+    },
+    {
+      "start": 1328.8,
+      "end": 1335.52,
+      "text": "When you take that mindset and invert it and realize that these smaller companies want"
+    },
+    {
+      "start": 1335.52,
+      "end": 1342.96,
+      "text": "concierge level white glove service, deliver it for them, but charge accordingly."
+    },
+    {
+      "start": 1342.96,
+      "end": 1347.96,
+      "text": "That's why my smaller clients are on paper more profitable than my large clients."
+    },
+    {
+      "start": 1347.96,
+      "end": 1350.8,
+      "text": "Zach, I can't thank you enough for joining the show today."
+    },
+    {
+      "start": 1350.8,
+      "end": 1355.56,
+      "text": "Some really great insights about targeting and winning larger customers."
+    },
+    {
+      "start": 1355.56,
+      "end": 1360.52,
+      "text": "I think anyone that's out there listening that really wants to grow their business, you"
+    },
+    {
+      "start": 1360.52,
+      "end": 1364.72,
+      "text": "have provided some insights that will be really valuable to them."
+    },
+    {
+      "start": 1364.72,
+      "end": 1370.72,
+      "text": "Thank you again and looking forward to our ongoing partnership together, Zach."
+    },
+    {
+      "start": 1370.72,
+      "end": 1372.68,
+      "text": "Yeah, absolutely."
+    },
+    {
+      "start": 1372.68,
+      "end": 1373.68,
+      "text": "Thank you everybody."
+    },
+    {
+      "start": 1373.68,
+      "end": 1377.36,
+      "text": "That's an end to another episode of Infinite Scale."
+    },
+    {
+      "start": 1377.36,
+      "end": 1378.6,
+      "text": "Looking forward to you tuning in next time."
+    },
+    {
+      "start": 1381.8,
+      "end": 1383.2,
+      "text": "Thanks for joining us."
+    },
+    {
+      "start": 1383.2,
+      "end": 1388.84,
+      "text": "If you'd like to get your own copy of Infinite Scale, just go to benchmark365.com and if"
+    },
+    {
+      "start": 1388.84,
+      "end": 1393.44,
+      "text": "you have any comments, feedback or suggestions for future podcast episodes, just drop us"
+    },
+    {
+      "start": 1393.44,
+      "end": 1397.08,
+      "text": "a line at hello@benchmark365.com."
+    },
+    {
+      "start": 1397.08,
+      "end": 1397.92,
+      "text": "Thanks for listening."
+    }
+  ]
+}
