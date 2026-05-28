@@ -67,4 +67,8 @@ Source materials: current aerocms.net, the XMind strategy map (April 2026 versio
 
 ## Deliverable
 
-Static HTML/CSS homepage mockup. View at `file:///c:/development/_projects/aerocms-redesign/index.html`.
+Static HTML/CSS homepage mockup. View at `file:///c:/development/_queue/aerocms-redesign/index.html`.
+
+Rendered preview: `assets/images/homepage-mockup.png` (1440×2400, headless Chrome, 2026-05-27).
+
+![Homepage mockup](assets/images/homepage-mockup.png)
