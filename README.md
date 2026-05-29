@@ -12,7 +12,7 @@ Quick redesign mockup for **AeroCMS** (Aero Computer Management Solutions LLC) �
 - `services/security.html` — Security Solutions detail (vCISO, SIEM, MDR, EDR)
 - `services/cloud.html` — Cloud Services detail (Azure, VMware, private)
 - `services/hardware.html` — Hardware as a Service detail
-- `plans.html` — Good/Better/Best/Enterprise + comparison table + Kaseya User Bundle + FAQs
+- `plans.html` — Good/Better/Best/Enterprise + comparison table + AeroCMS Security Bundle + FAQs
 - `resources.html` — Library: tools, guides, webinars, infographics, eBooks (~30 assets total)
 - `news.html` — Blog index with featured post + 6 cards + category browse
 - `contact.html` — Full form (with subject dropdown), 5 offices, social, FAQ
